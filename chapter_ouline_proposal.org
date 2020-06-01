@@ -8,12 +8,12 @@ Lean Construction 4.0 as a new systems-wide thinking where synergies and overlap
 
 *** Questions to be addressed by authors in proposed chapters. 
 ****  If you are interested in authoring one of the Chapters of the Lean Construction 4.0 book, we would like to consider the following questions to guide the development of your chapter:
-    - How do you think lean construction principles are linked to the technology functionalities/features of the digital/smart technology that you investigated and worked with? This would produce what we name as “Lean Construction 4.0”
-    - How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
-    - What do you think are the main barriers and challenges to implement “Lean Construction 4.0” in industry? What do you think are the gains and overall benefits?
-    - How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
-    - How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
-    - Framework proposed for chapters: We would also like that authors consider the following framework for the chapters. While we don’t want to constraint innovation and creative in the making of the chapters, we hope that this can be the minimum technical aspects to be covered.
+    1. How do you think lean construction principles are linked to the technology functionalities/features of the digital/smart technology that you investigated and worked with? This would produce what we name as “Lean Construction 4.0”
+    2. How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
+    3. What do you think are the main barriers and challenges to implement “Lean Construction 4.0” in industry? What do you think are the gains and overall benefits?
+    4. How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
+    5. How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
+    6. Framework proposed for chapters: We would also like that authors consider the following framework for the chapters. While we don’t want to constraint innovation and creative in the making of the chapters, we hope that this can be the minimum technical aspects to be covered.
 
 *** Theoretical underpinning
     - Technology
@@ -84,18 +84,19 @@ The Productivity Function deals with project-driven production process as system
 Information collection of input(s) and output(s) is crucial to calculate the process.
 As such, the project management automated system and control utilizes a series of techniques such as computer vision, artificial intelligence, and internet-of-things (iot) to collect data.
 
-*** How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
+*** NEXT How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
 
     The framework offers benefits such as increased information flow, detection and prevention of overburdening equipment or labor (Muri - 無理) and production unevenness (Mura - 斑), reduction of waste (Muda - 無駄), evidential and continuous process standardization and improvement, reuse and abstraction of project information across endeavors.
 
      
-*** WORKING What do you think are the main barriers and challenges to implement “Lean Construction 4.0” in industry? What do you think are the gains and overall benefits?
+*** REVIEW What do you think are the main barriers and challenges to implement “Lean Construction 4.0” in industry? What do you think are the gains and overall benefits?
 
     On a project management dayly basis collect and process information is challenging. Information is inaccurate often provenient from guesses instead of measurement. Process information into knowledge is then discouraged or outcome into to also innacurate results. What may support incorrect decision. In manufacturing, the operation is constantly monitored by the supervisory control and data acquisition (SCADA) system. The system monitors, gathers, and processes real-time In manufacturing, the production moves from machine to machine, worker to worker, or a combination of both. The route of production is fixed (Antunes and Gonzalez 2015; Hayes and Wheelwright 1979). Thus, the positions of sensors and actuators are fixed and planned according to the production routes and its flow. Once set, the positions only need to be modified if the production routes change. In construction production routes are flexible. “Jobs arrive in different forms and require different tasks, and thus the equipment tends to be relatively general purpose (Hayes and Wheelwright 1979).” Some production routes will only exist long after the beginning of the project by the time that others would be extinct. Construction must then rely on general purpose sensors that, as the equipment, can be used in different applications through the project life-cycle, often, requiring those also to be mobile. Hence, traditional instrumentation (and sensor positioning) used in a manufacturing SCADA systems do not work in construction, as the instrumentation must be mobile.
 
-     4) How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
+*** NEXT How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
 
-     5) How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
+
+*** How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
 
      Using the chrono-analysis continuous assessment jointly with the data (production progress and workers effort) from previous projects informal processes tends to be eliminated. Better processes are developed and standardized. More accurate historical information is persistent and can be generalized to different projects enabling comparison and continuous improvement methodologies from project to project. New builders will be trained in the benchmark process instead of the “I have been done this for the last x years” (and repeating the same mistakes over and over) approach. As such, the conservative company culture, lack of innovation and delayed adoption will be addressed by the marked. Companies will quantitatively assess and qualify the performance of contractors in previous projects. In an intensive third-party contracting industry such as construction, low productivity companies that often make mistakes are costly, and consequently, put at the end of the supplier's list or dismissed. Construction needs an increase in the number of builders, but it really needs builders with better performance.
 
