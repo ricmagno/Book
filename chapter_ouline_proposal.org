@@ -84,10 +84,10 @@ The Productivity Function deals with project-driven production process as system
 Information collection of input(s) and output(s) is crucial to calculate the process.
 As such, the project management automated system and control utilizes a series of techniques such as computer vision, artificial intelligence, and internet-of-things (iot) to collect data.
 
-*** NEXT How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
+*** WORKING How do you think the duality lean/technology connect with people in practical terms? Please think in different aspects such as implementation and adoption, end-users usability issues.
 
-    The framework offers benefits such as increased information flow, detection and prevention of overburdening equipment or labor (Muri - 無理) and production unevenness (Mura - 斑), reduction of waste (Muda - 無駄), evidential and continuous process standardization and improvement, reuse and abstraction of project information across endeavors.
-
+    The research aims to offers benefits such as increased information flow, detection and prevention of overburdening equipment or labor (Muri - 無理) and production unevenness (Mura - 斑), reduction of waste (Muda - 無駄), evidential and continuous process standardization and improvement, reuse and abstraction of project information across endeavors. 
+End-users need to understand concepts of production management and their application to project management. 
      
 *** REVIEW What do you think are the main barriers and challenges to implement “Lean Construction 4.0” in industry? What do you think are the gains and overall benefits?
 
