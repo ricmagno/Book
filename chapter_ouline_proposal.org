@@ -105,12 +105,12 @@ In summary, it is a quantitative application of lean manufacturing theory to con
 
 *** REVIEW How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
 
-   From this research, students will acquire concepts and methods as well as learn how to calculate and apply to a variety of project scenarios.
+   From this theory, students will acquire concepts and methods as well as learn how to calculate and apply to a variety of project scenarios.
 It the end, students will have to make management decisions supported by calculations using the project data.
 It starts with concepts from production management in manufacturing cite:Hopp1990, and an overview of dynamic systems cite:Nise2010. 
 From this point forward, you will model project production based on data, calculate different parameters and use them in your decision-making process.
 Students should also be familiar with basic data science and programming in Matlab or Python.
-For the latter, literature and learning resources are vastly available online alse expect to work with different disciplines in a project-based learning approach that will challenge your problem-solving skills.
+Studentes also should expect to work with different disciplines in a project-based learning approach that will challenge your problem-solving skills.
 
 *** DONE How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
     The theory, as well as the automated support system, aims to support project managers' decision-making process and project processes execution. 
