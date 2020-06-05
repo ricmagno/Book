@@ -85,10 +85,10 @@ which is based on ordinary di?erential mathematical models. Dynamics simulation 
      This research builds an analytical and scalable method (Productivity Function) to represent the behavior of production systems. By considering the transient state, Productivity Function produced models that were more accurate in describing the processes dynamics than the steady state approaches. The Productivity Function provides a mathematical foundation to develop algebraic for the calculations of cycle times (average, best- and worst-cases), throughput at capacity, and the influence of the transient state time in the production variability. Productivity Function is applied in feedback loop control yielding a robust approach to plan, control, and optimize production.
 
 
-** WORKING Answers [80%]  
+** DONE Answers [100%]  
 *** DONE How do you think lean construction principles are linked to the technology functionalities/features of the digital/smart technology that you investigated and worked with? This would produce what we name as “Lean Construction 4.0”
 
-    This research stands on the four pillars of manufacturing knowledge and lean production: production processes, production management, equipment/tool design, and automated systems and control.
+    This theory stands on the four pillars of manufacturing knowledge and lean production: production processes, production management, equipment/tool design, and automated systems and control.
 The production processes, in this case, project-driven processes, are divided into planning, monitoring, controlling, and executing groups clustering technologies to track both the project product and production.
 The research translates production management theory (e.g., variability and capacity) to project-driven production management.
 As such, to mathematically determine a process model and its features, a novelty approach was developed: the Productivity Function.
@@ -103,14 +103,9 @@ In summary, it is a quantitative application of lean manufacturing theory to con
 
     On a project management dayly basis collect and process information is challenging. Information is inaccurate often provenient from guesses instead of measurement. Process information into knowledge is then discouraged or outcome into to also innacurate results. What may support incorrect decision. In manufacturing, the operation is constantly monitored by the supervisory control and data acquisition (SCADA) system. The system monitors, gathers, and processes real-time In manufacturing, the production moves from machine to machine, worker to worker, or a combination of both. The route of production is fixed (Antunes and Gonzalez 2015; Hayes and Wheelwright 1979). Thus, the positions of sensors and actuators are fixed and planned according to the production routes and its flow. Once set, the positions only need to be modified if the production routes change. In construction production routes are flexible. “Jobs arrive in different forms and require different tasks, and thus the equipment tends to be relatively general purpose (Hayes and Wheelwright 1979).” Some production routes will only exist long after the beginning of the project by the time that others would be extinct. Construction must then rely on general purpose sensors that, as the equipment, can be used in different applications through the project life-cycle, often, requiring those also to be mobile. Hence, traditional instrumentation (and sensor positioning) used in a manufacturing SCADA systems do not work in construction, as the instrumentation must be mobile.
 
-*** REVIEW How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
+*** DONE How can we educate students on the challenges and benefits of “Lean Construction 4.0”?
 
-   From this theory, students will acquire concepts and methods as well as learn how to calculate and apply to a variety of project scenarios.
-It the end, students will have to make management decisions supported by calculations using the project data.
-It starts with concepts from production management in manufacturing cite:Hopp1990, and an overview of dynamic systems cite:Nise2010. 
-From this point forward, you will model project production based on data, calculate different parameters and use them in your decision-making process.
-Students should also be familiar with basic data science and programming in Matlab or Python.
-Studentes also should expect to work with different disciplines in a project-based learning approach that will challenge your problem-solving skills.
+    From this theory, students will acquire concepts and methods as well as learn how to calculate and apply to a variety of project scenarios. It the end, students will have to make management decisions supported by calculations using the project data. It starts with concepts from production management in manufacturing cite:Hopp1990, and an overview of dynamic systems cite:Nise2010. From this point forward, you will model project production based on data, calculate different parameters, and use them in your decision-making process. Students should also be familiar with basic data science and programming in Matlab or Python. Students also should expect to work with different disciplines in a project-based learning approach that will challenge your problem-solving skills.
 
 *** DONE How can we avoid the temptation of placing technology at the core rather than people when we think about the “Lean Construction 4.0” concept?
     The theory, as well as the automated support system, aims to support project managers' decision-making process and project processes execution. 
