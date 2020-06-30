@@ -65,7 +65,7 @@ A chapter outline based on the previously mentioned framework.
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
-Consequently, construction adopts the manufacturing production model dismissing the application of mathematical approaches that accurately describe the characteristics of its production system. 
+Consequently, construction adopts the manufacturing production model dismissing the application of approaches that accurately describe the characteristics of its production system. 
 This chapter aims to provide a production theory to better understand the production mechanisms of repetitive processes in project-driven systems in construction.
 The chapter begins with an examination of the existing knowledge about production models, their characteristics, and the challenges to establishing a theoretical framework for controlling dynamic production systems management in construction projects. 
 The chapter progresses to an analytical and scalable method (Productivity Function) to represent the behavior of production systems. 
@@ -84,9 +84,9 @@ Finally, the chapter presents automated methods of data collection that feed the
 ***** The manufacturing theory does not apply directly to construction
 **** Productivity Function
 ****** Production process system representation
-****** Mathematical foudation
+****** Mathematical foundation of the Productivity Function
 ****** Modelling method
-**** Production Theory
+**** Production Theory for Construction
 ****** Production forecast
 ****** Variability analysis
 ****** Production benchmark
