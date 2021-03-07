@@ -1,0 +1,192 @@
+% Created 2021-03-07 Sun 16:03
+% Intended LaTeX compiler: pdflatex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[margin=2cm]{geometry}
+\usepackage[backend=bibtex,alldates=year,sorting=nyt]{biblatex} \addbibresource{/Users/ricmagno/Documents/References/library.bib}
+\bibliographystyle{/Users/ricmagno/Documents/References/Styles/apa6.bst}
+\author{Ricardo Antunes, Vicente A. González, Kenneth Walsh, Michael O'Sullivan, and Omar Rojas}
+\date{\today}
+\title{Productivity Function\\\medskip
+\large Mathematical foundation for Production Management in Construction}
+\hypersetup{
+ pdfauthor={Ricardo Antunes, Vicente A. González, Kenneth Walsh, Michael O'Sullivan, and Omar Rojas},
+ pdftitle={Productivity Function},
+ pdfkeywords={},
+ pdfsubject={Chapter Proposal},
+ pdfcreator={Emacs 26.3 (Org mode 9.1.9)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+
+\section{Guidelines}
+\label{sec:org10d48bc}
+\begin{verbatim}
+(tex-count-word)
+\end{verbatim}
+\begin{itemize}
+\item 7000 Words
+\end{itemize}
+\section{Book Chapter}
+\label{sec:org6883f63}
+\subsection{Abstract}
+\label{sec:org6f609db}
+The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
+Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
+These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
+Consequently, construction adopts the manufacturing production model dismissing the application of approaches that accurately describe the characteristics of its production system. 
+This chapter aims to provide a production theory to better understand the production mechanisms of repetitive processes in project-driven systems in construction.
+The chapter begins with an examination of the existing knowledge about production models, their characteristics, and the challenges to establishing a theoretical framework for controlling dynamic production systems management in construction projects. 
+The chapter progresses to an analytical and scalable method (Productivity Function) to represent the behavior of production systems. 
+The Productivity Function provides a mathematical foundation for the calculations of cycle times (average, best- and worst-cases), throughput at capacity, and the influence of the transient state time in the production variability. 
+Productivity Function is applied in feedback loop control yielding a robust approach to plan, control, and optimize production.
+Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
+
+\subsection{Outline}
+\label{sec:orgd50cede}
+\begin{enumerate}
+\item Introduction
+\label{sec:orge399dd3}
+\item Lean principles and production theory
+\label{sec:org0201dcf}
+\begin{enumerate}
+\item Production in manufacturing (Factory Physics)
+\label{sec:orge2de28c}
+
+ The manufacturing industry is knowable of its production.
+ From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
+ Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
+ This chapter stands on further development of lean production: it's mathematical explanation of production.
+Such work has been conducted by TOYOTA dude, THE guy from MIT and mates from Factory Physics.
+Their work combined provide a set of equations that apply to manufacturing production systems.
+A production system consists into three main elements: inputs, process, outputs (Figure ).
+Inputs may not reflecet the full range of requirementes to create the output but on this system view they determine the output.
+The process can be determined on physical knwon equations or most oftern determined by evaluating the relationship betwen input and output.
+The mathematical representation of this relantionship is main difference between manufacturing and construction.
+\item The manufacturing theory does not apply directly to construction
+\label{sec:org1fe3692}
+
+Manufacturing is either a continous or a repective process.
+Machinery and human resources are specialized and qualified.
+Production flow and material routes are established. 
+Thus, most manufacturing processess can be automated.
+That scenario is different from construction.
+While capacity is knwon and measured in manufacturing, there was no way to measured it in construction.
+Increasing production in construction often means add more human resources.
+That often cause decrease of productivity due to lack of space, tools, skills, etc.
+\end{enumerate}
+
+\item Productivity Function
+\label{sec:org7bdc425}
+\begin{enumerate}
+\item Production process system representation
+\label{sec:orgbf3231c}
+\item Mathematical foundation of the Productivity Function
+\label{sec:orgb683b73}
+
+\begin{equation}\label{eq:Productivity_Function}
+	P(s) = \frac{Y(s)}{U(s)} =
+	\frac{(\beta_m s^m + \beta_{m-1} s^{m-1}+\ldots+\beta_0)}{(\alpha_n s^n + \alpha_{n-1} s^{n-1}+\ldots+\alpha_0)}
+\end{equation}
+
+\item Modelling method
+\label{sec:org936250d}
+\end{enumerate}
+\item Production Theory for Construction
+\label{sec:org918efde}
+\begin{enumerate}
+\item Production forecast
+\label{sec:org6991b6d}
+\item Variability analysis
+\label{sec:org258b2e7}
+\item Production benchmark
+\label{sec:orgb51bd19}
+\begin{enumerate}
+\item Capacity
+\label{sec:org80a8e10}
+
+\begin{equation}\label{eq:Capacity}
+	y_{\mbox{ssv}} = \lim_{s \rightarrow 0} P(s) = P(0)
+\end{equation}
+\item Throughput
+\label{sec:orgd8ef376}
+\item Cycle-time
+\label{sec:orgc548685}
+
+\begin{equation}\label{eq:CycleTime}
+	y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_{\mbox{ssv}}
+\end{equation}
+
+\begin{enumerate}
+\item Average cycle-time
+\label{sec:org02932b0}
+\item Worst cycle-time
+\label{sec:org73211b0}
+\item Best cycle-time
+\label{sec:orgf5299af}
+\end{enumerate}
+\end{enumerate}
+\item Production plan, monitoring, and control
+\label{sec:orga348ee4}
+\end{enumerate}
+\item Applicability
+\label{sec:org82d740c}
+\begin{enumerate}
+\item Automation and technology
+\label{sec:orgd9456e8}
+\begin{enumerate}
+\item Supervisory control and data acquisition (SCADA)
+\label{sec:org0e16803}
+\item Challenges
+\label{sec:orgc17de36}
+\end{enumerate}
+\item Decision-making support
+\label{sec:org1f580c2}
+\item Benefits and impacts
+\label{sec:org94a9513}
+\end{enumerate}
+\item Discussion
+\label{sec:org4bee1c2}
+\item Conclusion
+\label{sec:orgddd5c7a}
+Papers:
+
+
+\cite{Antunes2015a}
+
+\parencite{Antunes2015a}
+
+\parencite{Antunes2015b}
+
+\parencite{Antunes2016}
+
+
+\parencite{Antunes2017a}
+
+\parencite{Antunes2017c}
+
+\parencite{Antunes2018a}
+
+
+\item References
+\label{sec:org30e0622}
+
+\printbibliography[title=none]
+\end{enumerate}
+\end{document}
