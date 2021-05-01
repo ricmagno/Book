@@ -51,12 +51,12 @@ Productivity Function is applied in feedback loop control yielding a robust appr
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
 ** INBOX Outline [0%]
-**** Introduction
-     Despite the name of the title of this chapter, you will not find equations here.
-     Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
-     You are more than welcome to deep your knownledge and see the equations and their development on the referenced literature.
-**** Lean principles and production theory
-***** Production in manufacturing (Factory Physics)
+*** Introduction
+    Despite the name of the title of this chapter, you will not find equations here.
+    Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
+    You are more than welcome to deep your knownledge and see the equations and their development on the referenced literature.
+*** Lean principles and production theory
+**** Production in manufacturing (Factory Physics)
      The manufacturing industry is knowable of its production.
      From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
      Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -68,7 +68,7 @@ Finally, the chapter presents automated methods of data collection that feed the
      The process can be determined on physical knwon equations or most oftern determined by evaluating the relationship betwen input and output.
      The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
-***** The manufacturing theory does not apply directly to construction
+**** The manufacturing theory does not apply directly to construction
 
       Manufacturing is either a continous or a repective process.
       Machinery and human resources are specialized and qualified.
@@ -79,7 +79,7 @@ Finally, the chapter presents automated methods of data collection that feed the
       Increasing production in construction often means add more human resources.
       That often cause decrease of productivity due to lack of space, tools, skills, etc.
       
-**** Productivity Function
+*** Productivity Function
 ****** NEXT Production process system representation [100%]
 
 Source Paper07

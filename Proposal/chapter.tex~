@@ -1,4 +1,4 @@
-% Created 2021-05-01 Sat 14:03
+% Created 2021-05-02 Sun 08:55
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -36,7 +36,7 @@
 
 
 \section{Guidelines}
-\label{sec:orgaae1e50}
+\label{sec:orge880f5d}
 \begin{verbatim}
 (tex-count-word)
 \end{verbatim}
@@ -44,9 +44,9 @@
 \item 7000 Words
 \end{itemize}
 \section{Book Chapter}
-\label{sec:org1d07ddb}
+\label{sec:org5aa76d1}
 \subsection{Abstract}
-\label{sec:org00717cc}
+\label{sec:org76c3dfc}
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
@@ -59,16 +59,18 @@ Productivity Function is applied in feedback loop control yielding a robust appr
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
 \subsection{Outline [0\%]}
-\label{sec:org8a92b01}
+\label{sec:org2bba338}
+\subsubsection{Introduction}
+\label{sec:orgc4d2740}
+Despite the name of the title of this chapter, you will not find equations here.
+Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
+You are more than welcome to deep your knownledge and see the equations and their development on the referenced literature.
 \begin{enumerate}
-\item Introduction
-\label{sec:orge6f66c1}
 \item Lean principles and production theory
-\label{sec:org304383a}
+\label{sec:org106846c}
 \begin{enumerate}
 \item Production in manufacturing (Factory Physics)
-\label{sec:orgb71a3ce}
-
+\label{sec:orgcb4ac45}
 The manufacturing industry is knowable of its production.
 From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
 Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -81,7 +83,7 @@ The process can be determined on physical knwon equations or most oftern determi
 The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
 \item The manufacturing theory does not apply directly to construction
-\label{sec:org30461bd}
+\label{sec:orgdd1b431}
 
 Manufacturing is either a continous or a repective process.
 Machinery and human resources are specialized and qualified.
@@ -94,10 +96,10 @@ That often cause decrease of productivity due to lack of space, tools, skills, e
 \end{enumerate}
 
 \item Productivity Function
-\label{sec:orgf6978fe}
+\label{sec:orge9359e0}
 \begin{enumerate}
 \item Production process system representation [100\%]
-\label{sec:orgbd9bad1}
+\label{sec:org4491c29}
 
 Source Paper07
 
@@ -123,13 +125,13 @@ Operating on possibly the same conditions of wave theory—linear/nonlinear, det
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/Construction_project_driven_production_system.eps}
-\caption{\label{fig:org0a418eb}Construction project-driven production system}
+\caption{\label{fig:org6d3b608}Construction project-driven production system}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
-\caption{\label{fig:org43c678c}A typical feedback loop control}
+\caption{\label{fig:org3f454f8}A typical feedback loop control}
 \end{figure}
 
 
@@ -140,7 +142,7 @@ The linear scheduling method (LSM) \cite{Harmelink1998,Su2016} and line-of-balan
 However, ``because of the steady state nature of this model, the system more closely represents industrial production processes than construction processes \cite{Thomas1990}.'' Short production runs \cite{Bashford2005}, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships \cite{Bertelsen2003,Lutz1993} frequently prevent repetitive production processes in construction to reach steady state \cite{Antunes2015a,Walsh2007}.
 
 \item Mathematical foundation of the Productivity Function
-\label{sec:org580caa0}
+\label{sec:org585a7b4}
 
 Although much work has been done on production management of repetitive construction processes, more studies need to be conducted to develop equations to quantify project-driven production systems in construction.
 The objective of this paper is to formulate variants of manufacturing production equations to calculate the production performance of repetitive construction processes for benchmarking purposes.
@@ -148,7 +150,7 @@ Furthermore, this paper shows the calculation of theoretical production paramete
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
 \begin{enumerate}
 \item TODO Explain transient and steady-state
-\label{sec:org177fe67}
+\label{sec:org33ca480}
 
 \subsection{Mathematical foundation of production}
 
@@ -165,7 +167,7 @@ The steady-state of a system
 \end{itemize}
 
 \item Explain traditional methods of steady-state
-\label{sec:org7bbaca1}
+\label{sec:org1c1ab88}
 
 
 
@@ -219,13 +221,13 @@ The work stream is a continuous flow of specialized processes and equipment runn
 \end{enumerate}
 
 \item Modelling method
-\label{sec:org02177ad}
+\label{sec:orgcbf46a6}
 \end{enumerate}
 \item Production Theory for Construction
-\label{sec:org62973f7}
+\label{sec:org036e8d7}
 \begin{enumerate}
 \item Production forecast
-\label{sec:org1a35ca6}
+\label{sec:org5dc71a2}
 
 Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
 Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
@@ -247,7 +249,7 @@ Following the framework, an analytical technique to describe the dynamic conditi
 This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
 
 \item Variability analysis
-\label{sec:org3814e8d}
+\label{sec:org8c3b418}
 ``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
 In other words, the system will achieve its maximum performance when there is no variability.
 That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
@@ -275,10 +277,10 @@ Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by 
 \end{equation}
 
 \item Production benchmark
-\label{sec:orgfd08fc0}
+\label{sec:org7a03d7b}
 \begin{enumerate}
 \item Throughput
-\label{sec:org4a8fb35}
+\label{sec:orgc97f08f}
 Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
 Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
 When the relationship between resources and throughput can be established;
@@ -293,7 +295,7 @@ Explicitly incorporating all factors that influence productivity in a model is a
 Simplifications and assumptions have to be made; however, the models are often over simplified.
 
 \item Capacity
-\label{sec:org04280c9}
+\label{sec:org266fc6e}
 ``Law (Capacity): In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.]{Hopp2001}.''
 Furthermore, in most cases, releasing work into the system above the capacity causes the system to become unstable \citep{Hopp2001}.
 According to these definitions, it would be correct to state that a process' capability is the highest throughput achievable without the process becoming unstable.
@@ -347,7 +349,7 @@ The step function in the time domain is given by:
 
 
 \item Cycle-time
-\label{sec:org5c4b35c}
+\label{sec:orge122172}
 
 The accumulated throughput over time results in units of a service or product produced over time.
 The time taken to produce one output is the cycle time.
@@ -393,37 +395,37 @@ y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_
 
 \begin{enumerate}
 \item Average cycle-time
-\label{sec:org60bd2af}
+\label{sec:org7e12d41}
 
 \item Worst cycle-time
-\label{sec:orgd3f9c09}
+\label{sec:orgddf5111}
 \item Best cycle-time
-\label{sec:orgc6324a2}
+\label{sec:orgcfa3e73}
 \end{enumerate}
 \end{enumerate}
 \item Production plan, monitoring, and control
-\label{sec:org5f922e4}
+\label{sec:orgc7652de}
 \end{enumerate}
 \item Applicability
-\label{sec:org4693df5}
+\label{sec:org0fbd2c5}
 \begin{enumerate}
 \item Automation and technology
-\label{sec:org2886418}
+\label{sec:org6138993}
 \begin{enumerate}
 \item Supervisory control and data acquisition (SCADA)
-\label{sec:org2c2b24a}
+\label{sec:orgb6b80b5}
 \item Challenges
-\label{sec:orgce7353d}
+\label{sec:org5c7f1d4}
 \end{enumerate}
 \item Decision-making support
-\label{sec:org84e75dc}
+\label{sec:org888e715}
 \item Benefits and impacts
-\label{sec:org248bf73}
+\label{sec:orga3e3ba5}
 \end{enumerate}
 \item Discussion
-\label{sec:org0e69cd1}
+\label{sec:org43473f1}
 \item Conclusion
-\label{sec:org5dd7a24}
+\label{sec:orge270466}
 Papers:
 
 
@@ -443,7 +445,7 @@ Papers:
 
 
 \item References
-\label{sec:org3a02d33}
+\label{sec:orge5ff826}
 
 \printbibliography[title=none]
 \end{enumerate}
