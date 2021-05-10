@@ -1,0 +1,5 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'chapter.blg'
+[100] biber-darwin:340> INFO - === Sat May  8, 2021, 12:27:03
+[285] Utils.pm:411> ERROR - Cannot find 'chapter.bcf'!
+[285] Biber.pm:132> INFO - ERRORS: 1

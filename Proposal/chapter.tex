@@ -1,4 +1,4 @@
-% Created 2021-05-04 Tue 19:33
+% Created 2021-05-10 Mon 18:12
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -16,8 +16,9 @@
 \usepackage{hyperref}
 \usepackage[margin=2cm]{geometry}
 \usepackage[a4paper,bindingoffset=0.2in,left=1in,right=1in,top=1in,bottom=1in,footskip=.25in]{geometry}
-\usepackage[backend=bibtex,style=apa]{biblatex}\addbibresource{/Users/ricmagno/Documents/References/library.bib}
+\usepackage[backend=biber,style=apa]{biblatex}\addbibresource{/Users/ricmagno/Documents/References/library.bib}
 \addbibresource{/Users/ricmagno/Documents/References/library.bib}
+\usepackage{tikz}
 \author{Ricardo Antunes, Vicente A. González, Kenneth Walsh, Michael O'Sullivan, and Omar Rojas}
 \date{\today}
 \title{Productivity Function\\\medskip
@@ -37,17 +38,16 @@
 
 
 \section{Guidelines}
-\label{sec:org66ee537}
+\label{sec:org8ad826c}
 \begin{verbatim}
 (tex-count-word)
 \end{verbatim}
 \begin{itemize}
 \item 7000 Words
 \end{itemize}
-\section{Book Chapter}
-\label{sec:orgf1f2594}
-\subsection{Abstract}
-\label{sec:org1738478}
+
+\section{Abstract}
+\label{sec:org54c07ad}
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
@@ -59,18 +59,15 @@ The Productivity Function provides a mathematical foundation for the calculation
 Productivity Function is applied in feedback loop control yielding a robust approach to plan, control, and optimize production.
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
-\subsection{Outline [0\%]}
-\label{sec:orgcc862eb}
-\subsubsection{Introduction}
-\label{sec:org518e880}
+\section{Introduction}
+\label{sec:org224f97c}
 Despite the name of the title of this chapter, you will not find equations here.
 Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
 You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
-\subsubsection{Lean principles and production theory}
-\label{sec:org08eebe9}
-\begin{enumerate}
-\item Production in manufacturing (Factory Physics)
-\label{sec:orgfb139a0}
+\section{Lean principles and production theory [0/2]}
+\label{sec:org2996b78}
+\subsection{Production in manufacturing (Factory Physics)}
+\label{sec:orga1dc28b}
 The manufacturing industry is knowable of its production.
 From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
 Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -82,8 +79,8 @@ Inputs may not reflecet the full range of requirementes to create the output but
 The process can be determined on physical knwon equations or most oftern determined by evaluating the relationship betwen input and output.
 The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
-\item The manufacturing theory does not apply directly to construction
-\label{sec:orgc3f21b7}
+\subsection{The manufacturing theory does not apply directly to construction}
+\label{sec:orgf82a055}
 
 Manufacturing is either a continous or a repective process.
 Machinery and human resources are specialized and qualified.
@@ -93,13 +90,10 @@ That scenario is different from construction.
 While capacity is knwon and measured in manufacturing, there was no way to measured it in construction.
 Increasing production in construction often means add more human resources.
 That often cause decrease of productivity due to lack of space, tools, skills, etc.
-\end{enumerate}
-
-\subsubsection{Productivity Function}
-\label{sec:org03d5d96}
-\begin{enumerate}
-\item Production process system representation [100\%]
-\label{sec:org6d785a8}
+\section{Productivity Function [0/4]}
+\label{sec:org13931d9}
+\subsection{Production process system representation [100\%]}
+\label{sec:orgaec9f55}
 
 \uline{Source Paper07}
 
@@ -120,16 +114,48 @@ A wavelet network may be used as universal function approximator (“a universal
 A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
 Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=150]{./Figures/Construction_project_driven_production_system.weps}
-\caption{\label{fig:org4029599}Construction project-driven production system}
+\#+BEGIN\textsubscript{LATEX}:
+\begin{figure}
+  \centering
+  \begin{tikzpicture}[>=latex',every node/.append style=
+      {font=\scriptsize},node distance=5mm]
+
+  \node [input, name=input] {};
+  \node [sum, right=12mm of input] (control_sum) {};
+  % \node [block, right=12mm of control_sum, rounded corners] (K) {Controller \\ $K$};
+  \node [block, right=3cm of control_sum, rounded corners] (G) {System \\ $G$};
+  \node [dot, right=12mm of G] (snodo1) {};
+  \node [output, right=of snodo1] (output) {};
+
+  \begin{scope}[auto]
+    \draw [->] (input) -- (control_sum)
+    node[very near start] {$r(t)$}
+    node[very near start,swap] {Reference}
+    node[very near end] {$+$};
+    % \draw [->] (control_sum) -- node {$e(t)$} node[swap] {Error} (K);
+    \draw [->] (control_sum) -- node {$u(t)$} node[swap] {Input} (G);
+    \draw [-] (G) -- node {$y(t)$} node[swap] {Output} (snodo1);
+    \draw [->] (snodo1) -- (output);
+    \draw [->] (snodo1) |- +(0,-1.5) -| (control_sum)
+    node[near start]{}
+    node[near start, swap]{}
+    node[very near end] {$-$};
+  \end{scope}
+  \end{tikzpicture}
+  \caption{Feedback loop}\label{fig:Feedback loop}
 \end{figure}
+\#+END\textsubscript{LATEX}
+
+
+
+
+
+\url{./Figures/Construction\_project\_driven\_production\_system.weps}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
-\caption{\label{fig:orgf94dc0b}A typical feedback loop control}
+\caption{\label{fig:org443301d}A typical feedback loop control}
 \end{figure}
 
 
@@ -139,20 +165,19 @@ This constant can be determined by, for instance, the linear curve fitting or th
 The linear scheduling method (LSM) \cite{Harmelink1998,Su2016} and line-of-balance (LOB) \cite{Lumsden1968,Su2016,ZolfagharDolabi2014} are examples of scheduling models for repetitive processes based on the steady state model.
 However, ``because of the steady state nature of this model, the system more closely represents industrial production processes than construction processes \cite{Thomas1990}.'' Short production runs \cite{Bashford2005}, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships \cite{Bertelsen2003,Lutz1993} frequently prevent repetitive production processes in construction to reach steady state \cite{Antunes2015a,Walsh2007}.
 
-\item Mathematical foundation of the Productivity Function
-\label{sec:orgaccf1e4}
+\subsection{Mathematical foundation of the Productivity Function}
+\label{sec:org3316295}
 
 Although much work has been done on production management of repetitive construction processes, more studies need to be conducted to develop equations to quantify project-driven production systems in construction.
 The objective of this paper is to formulate variants of manufacturing production equations to calculate the production performance of repetitive construction processes for benchmarking purposes.
 Furthermore, this paper shows the calculation of theoretical production parameters such as capacity and cycle time, as well as the influence of transient time on productivity.
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
-\begin{enumerate}
-\item TODO Explain transient and steady-state
-\label{sec:org21ef8e8}
+\subsubsection{TODO Explain transient and steady-state}
+\label{sec:orgd8a4ae4}
 
 \begin{enumerate}
 \item Mathematical foundation of production
-\label{sec:org85a6bf1}
+\label{sec:orgbea4530}
 
 Repetitive construction projects falls into a fuzzy area where both project management and manufacturing overlap.
 Repetitive construction projects are constituted by several contractors executing processes that they are specialized in, as for instance plumbers and electricians, that in the end, build a one-of-a-kind product.
@@ -165,10 +190,9 @@ However, traditional construction management, at this time, utilizes practices b
 \item The system steady-state.
 The steady-state of a system
 \end{itemize}
-\end{enumerate}
 
 \item Explain traditional methods of steady-state
-\label{sec:orgfac6b7d}
+\label{sec:org6370d98}
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
 When the output reaches this value, the response is then at steady state.
@@ -187,7 +211,7 @@ Finally, if the system is stable; the output will tend to the steady state value
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/FIG02Transient_analysis.eps}
-\caption{\label{fig:org8d5d5c0}Transient analysis for unit step input \label{fig:Transient}}
+\caption{\label{fig:org4dfd80d}Transient analysis for unit step input \label{fig:Transient}}
 \end{figure}
 
 
@@ -217,8 +241,8 @@ The work stream is a continuous flow of specialized processes and equipment runn
 \end{equation}
 \end{enumerate}
 
-\item Modelling method
-\label{sec:org718f28d}
+\subsection{Modelling method [0/0]}
+\label{sec:org648f953}
 \uline{Source Paper04}
 
 The objective of system identification is to build mathematical models of dynamic systems using measured data from a system \citep{Ljung1999}.
@@ -233,8 +257,8 @@ Black-box modeling is a trial-and-error method, where parameters of various mode
 The resulting models vary in complexity depending on the flexibility needed to account for both the dynamics and any disturbance in the data.
 The transfer function is used to show the system dynamics explicitly.
 
-\item Step response: Transient and steady state\}
-\label{sec:org2064630}
+\subsubsection{Step response: Transient and steady state}
+\label{sec:orgbd66aa2}
 
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
@@ -260,10 +284,85 @@ The step function in the time domain is given by:
 	\end{cases}.
 \end{equation}
 
+\subsection{Production Theory for Construction}
+\label{sec:orgf1d3594}
+\subsubsection{Production forecast}
+\label{sec:org67e6666}
 
+Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
+Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
+Even though forecasting in construction is often inadequate and one of the weakest project controls functions \citep{ConstructionIndustryInstitute2012}.
+``While there are many reasons for poor forecasting practice, one of the main causes may be the limited educational resources available on forecasting
+In many textbooks and manuals, education about forecasting starts and stops with a presentation of earned value and elementary trending calculations \citep{ConstructionIndustryInstitute2012a},'' such as linear functions and averages.
+The numerical estimation approach of Productivity Function can be embedded in the Project Management software or used as a stand-alone tool to forecast, access and simulate critical processes that require in-depth project controls.
+As the Productivity Function models do not require anything else than the process' inputs and outputs, e.g., labor hours used to produce square meters of plastered wall, the models can be used together with project control practices such as earned value or Planned Percent Complete (PPC).
+Simply by replacing the traditional steady state model by the Productivity Function, more accurate results should be obtained.
+Furthermore, Dynamics Simulation, which relies on the mathematical models defined by ordinary differential equations (as the Productivity Function), have a significant role in supply chain \citep{Higuchi2004} and production in manufacturing \citep{Forrester1997}.
+The application of Dynamics Simulation in construction is rare, specifically due to the lacking of mathematical models to describe the production in construction.
+A gap that may be fulfilled by the Productivity Function.
+While the algebraic form of Productivity Function may support the development of equations that further explain the production of project-driven processes, such as equations for capacity and cycle time.
+Furthermore, the measurement and visualization of the transient state of project-driven processes support the quantitative and structured application of methods to reduce setup times, as for instance, Single Minute Exchange of Dices (SMED) and pre-fabrication \citep{Antunes2016}.
+
+This chapter initiated as an exploration of elements in the building construction project cycle and their effect on production behavior, resulting in theoretical framework structured as a system \citep{Antunes2015a}.
+This system proposed a flow of uncertainty to risk and then risk impact risk impact that would cause variability.
+Following the framework, an analytical technique to describe the dynamic conditions of production in repetitive processes in projects was suggested \citep{Antunes2015}, as well as the relationship between the model characteristics and flow variability \citep{Antunes2016}.
+This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
+
+\subsubsection{Variability analysis}
+\label{sec:orgdbd5ca1}
+``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
+In other words, the system will achieve its maximum performance when there is no variability.
+That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
+Based on the knowledge of dynamic systems, the lowest level of variation in the output (indistinctly used in this paper as throughput once the outputs of dynamic systems are time dependent) happens when the system is at steady state \citep{Nise2010,Ogata2010}.
+Productivity Function can be used to determine the theoretical output at steady state, and consequently the cycle time, using the stationary conditions as shown in Equation\textasciitilde{}\ref{eq:LongRun}.
+
+The output at steady state of a system represented by a Productivity Function in the frequency domain can be calculated using the final value theorem.
+``The final value theorem provides an easy-to-use technique for determining this value without having to first invert the Laplace transform to determine the time signal \citep[p.97]{Chen2007}.''
+Equation\textasciitilde{}\ref{eq:FinalValue} shows the final value theorem which gives the steady state value, \(y_{\mbox{ssv}}\), in the frequency domain.
+
+\begin{equation}\label{eq:FinalValue}
+	\lim_{t\rightarrow \infty} y(t)=\lim_{s\rightarrow 0} sY(s)
+\end{equation}
+
+Replacing \(Y(s) = U_{\mbox{step}}(s) \times P(s)\), where \(U_{\mbox{step}}(s)\) is the step function, \(1/s\): \(Y(s) = 1/s \times P(s)\)
+
+\begin{equation}\label{eq:FinalValue2}
+	\lim_{t\rightarrow \infty} y(t)=\lim_{s \rightarrow 0} s \frac{1}{s} \times P(s)
+\end{equation}
+
+Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by Equation\textasciitilde{}\ref{eq:steady state} the result is the output at steady state, i.e., the system's highest throughput with lowest variation: capacity.
+
+\begin{equation}\label{eq:Capacity}
+	y_{\mbox{ssv}} = \lim_{s \rightarrow 0} P(s) = P(0)
+\end{equation}
+
+\subsubsection{Production benchmark}
+\label{sec:org290f339}
+\subsubsection{Production plan, monitoring, and control}
+\label{sec:org48f792d}
 \begin{enumerate}
+\item Throughput
+\label{sec:org1e8c937}
+Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
+Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
+When the relationship between resources and throughput can be established;
+it is possible to determine the necessary resources to achieve the desired performance \cite{Cho2011}.
+The production workflow in construction is segmented, i.e., job shop, where ``jobs arrive in different forms and require different tasks, and thus the equipment tends to be relatively general purpose \cite{Hayes1979},'' equipment has different productivity/availability \cite{Ok2006}, and the increased labor resource frequently causes site congestion \cite{Cho2011}.
+There is an endless list of human factors that influence the labor output, such as the workers' experience, skill, and age \cite{El-Gohary2014}.
+
+The open conversion model \cite{Kellogg1981} considers internal, external, and also unknown influences to productivity in a hierarchical arrangement.
+Despite being generic and industry-comprehensive, at the operational level the complexity of inputs, such as the cost of labor, capital, energy, and materials; and output, e.g., dollars, makes the use of the open conversion model impractical \cite{Thomas1990}.
+Explicitly incorporating all factors that influence productivity in a model is a challenging task.
+
+``The relationship between inputs and outputs is very complex and, in many cases, includes some unknown combined effects \cite{Ok2006}.''
+Simplifications and assumptions have to be made; however, the models are often over simplified.
+
 \item Cycle-time
-\label{sec:orgf84f6aa}
+\label{sec:org7f568c7}
+
+
+
+
 
 The accumulated throughput over time results in units of a service or product produced over time.
 The time taken to produce one output is the cycle time.
@@ -309,91 +408,14 @@ y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_
 
 \begin{enumerate}
 \item Average cycle-time
-\label{sec:org1216e6f}
-
+\label{sec:org566424e}
 \item Worst cycle-time
-\label{sec:orga6afbbf}
+\label{sec:org411cc13}
 \item Best cycle-time
-\label{sec:orgfb11c54}
+\label{sec:orgaa73bab}
 \end{enumerate}
-\end{enumerate}
-\item Production plan, monitoring, and control
-\label{sec:orgff14200}
-\end{enumerate}
-\item Production Theory for Construction
-\label{sec:org6e7bcc7}
-\begin{enumerate}
-\item Production forecast
-\label{sec:org9f285f7}
-
-Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
-Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
-Even though forecasting in construction is often inadequate and one of the weakest project controls functions \citep{ConstructionIndustryInstitute2012}.
-``While there are many reasons for poor forecasting practice, one of the main causes may be the limited educational resources available on forecasting
-In many textbooks and manuals, education about forecasting starts and stops with a presentation of earned value and elementary trending calculations \citep{ConstructionIndustryInstitute2012a},'' such as linear functions and averages.
-The numerical estimation approach of Productivity Function can be embedded in the Project Management software or used as a stand-alone tool to forecast, access and simulate critical processes that require in-depth project controls.
-As the Productivity Function models do not require anything else than the process' inputs and outputs, e.g., labor hours used to produce square meters of plastered wall, the models can be used together with project control practices such as earned value or Planned Percent Complete (PPC).
-Simply by replacing the traditional steady state model by the Productivity Function, more accurate results should be obtained.
-Furthermore, Dynamics Simulation, which relies on the mathematical models defined by ordinary differential equations (as the Productivity Function), have a significant role in supply chain \citep{Higuchi2004} and production in manufacturing \citep{Forrester1997}.
-The application of Dynamics Simulation in construction is rare, specifically due to the lacking of mathematical models to describe the production in construction.
-A gap that may be fulfilled by the Productivity Function.
-While the algebraic form of Productivity Function may support the development of equations that further explain the production of project-driven processes, such as equations for capacity and cycle time.
-Furthermore, the measurement and visualization of the transient state of project-driven processes support the quantitative and structured application of methods to reduce setup times, as for instance, Single Minute Exchange of Dices (SMED) and pre-fabrication \citep{Antunes2016}.
-
-This chapter initiated as an exploration of elements in the building construction project cycle and their effect on production behavior, resulting in theoretical framework structured as a system \citep{Antunes2015a}.
-This system proposed a flow of uncertainty to risk and then risk impact risk impact that would cause variability.
-Following the framework, an analytical technique to describe the dynamic conditions of production in repetitive processes in projects was suggested \citep{Antunes2015}, as well as the relationship between the model characteristics and flow variability \citep{Antunes2016}.
-This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
-
-\item Variability analysis
-\label{sec:orgd7dcc6f}
-``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
-In other words, the system will achieve its maximum performance when there is no variability.
-That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
-Based on the knowledge of dynamic systems, the lowest level of variation in the output (indistinctly used in this paper as throughput once the outputs of dynamic systems are time dependent) happens when the system is at steady state \citep{Nise2010,Ogata2010}.
-Productivity Function can be used to determine the theoretical output at steady state, and consequently the cycle time, using the stationary conditions as shown in Equation\textasciitilde{}\ref{eq:LongRun}.
-
-The output at steady state of a system represented by a Productivity Function in the frequency domain can be calculated using the final value theorem.
-``The final value theorem provides an easy-to-use technique for determining this value without having to first invert the Laplace transform to determine the time signal \citep[p.97]{Chen2007}.''
-Equation\textasciitilde{}\ref{eq:FinalValue} shows the final value theorem which gives the steady state value, \(y_{\mbox{ssv}}\), in the frequency domain.
-
-\begin{equation}\label{eq:FinalValue}
-	\lim_{t\rightarrow \infty} y(t)=\lim_{s\rightarrow 0} sY(s)
-\end{equation}
-
-Replacing \(Y(s) = U_{\mbox{step}}(s) \times P(s)\), where \(U_{\mbox{step}}(s)\) is the step function, \(1/s\): \(Y(s) = 1/s \times P(s)\)
-
-\begin{equation}\label{eq:FinalValue2}
-	\lim_{t\rightarrow \infty} y(t)=\lim_{s \rightarrow 0} s \frac{1}{s} \times P(s)
-\end{equation}
-
-Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by Equation\textasciitilde{}\ref{eq:steady state} the result is the output at steady state, i.e., the system's highest throughput with lowest variation: capacity.
-
-\begin{equation}\label{eq:Capacity}
-	y_{\mbox{ssv}} = \lim_{s \rightarrow 0} P(s) = P(0)
-\end{equation}
-
-\item Production benchmark
-\label{sec:org759677b}
-\begin{enumerate}
-\item Throughput
-\label{sec:orgd467e95}
-Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
-Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
-When the relationship between resources and throughput can be established;
-it is possible to determine the necessary resources to achieve the desired performance \cite{Cho2011}.
-The production workflow in construction is segmented, i.e., job shop, where ``jobs arrive in different forms and require different tasks, and thus the equipment tends to be relatively general purpose \cite{Hayes1979},'' equipment has different productivity/availability \cite{Ok2006}, and the increased labor resource frequently causes site congestion \cite{Cho2011}.
-There is an endless list of human factors that influence the labor output, such as the workers' experience, skill, and age \cite{El-Gohary2014}.
-
-The open conversion model \cite{Kellogg1981} considers internal, external, and also unknown influences to productivity in a hierarchical arrangement.
-Despite being generic and industry-comprehensive, at the operational level the complexity of inputs, such as the cost of labor, capital, energy, and materials; and output, e.g., dollars, makes the use of the open conversion model impractical \cite{Thomas1990}.
-Explicitly incorporating all factors that influence productivity in a model is a challenging task.
-
-``The relationship between inputs and outputs is very complex and, in many cases, includes some unknown combined effects \cite{Ok2006}.''
-Simplifications and assumptions have to be made; however, the models are often over simplified.
-
 \item Capacity
-\label{sec:org51df73c}
+\label{sec:org79a68d1}
 ``Law (Capacity): In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.]{Hopp2001}.''
 Furthermore, in most cases, releasing work into the system above the capacity causes the system to become unstable \citep{Hopp2001}.
 According to these definitions, it would be correct to state that a process' capability is the highest throughput achievable without the process becoming unstable.
@@ -413,55 +435,27 @@ Regardless of the equation used for productivity measurement \citep{Thomas1990},
 	y_{\mbox{ssv}} = \lim_{s \rightarrow 0} P(s) = P(0)
 \end{equation}
 \end{enumerate}
-\end{enumerate}
 
 
+\section{Applicability}
+\label{sec:org9563ed3}
+\subsection{Automation and technology}
+\label{sec:org0e5c59d}
+\subsubsection{Supervisory control and data acquisition (SCADA)}
+\label{sec:org6e7b27c}
+\subsubsection{Challenges}
+\label{sec:orge225211}
+\subsection{Decision-making support}
+\label{sec:orgd531890}
+\subsection{Benefits and impacts}
+\label{sec:orgac622fe}
+\section{Discussion}
+\label{sec:org40d2b1f}
+\section{Conclusion}
+\label{sec:org38f47e8}
 
-\item Applicability
-\label{sec:orgf1be175}
-\begin{enumerate}
-\item Automation and technology
-\label{sec:org38833c6}
-\begin{enumerate}
-\item Supervisory control and data acquisition (SCADA)
-\label{sec:org9348f82}
-\item Challenges
-\label{sec:org26b87a0}
-\end{enumerate}
-\item Decision-making support
-\label{sec:orga7a025c}
-\item Benefits and impacts
-\label{sec:orga3e878a}
-\end{enumerate}
-\item Discussion
-\label{sec:org7bede92}
-\item Conclusion
-\label{sec:org4e86cc2}
-Papers:
-
-
-\cite{Antunes2015a}
-
-\parencite{Antunes2015a}
-
-\parencite{Antunes2015b}
-
-\parencite{Antunes2016}
-
-\parencite{Antunes2017a}
-
-\parencite{Antunes2017c}
-
-\parencite{Antunes2018a}
-
-
-\item References
-\label{sec:org22ebdeb}
+\section{References}
+\label{sec:org00fcb0a}
 
 \printbibliography[title=none]
-\end{enumerate}
 \end{document}
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: t
-%%% End:

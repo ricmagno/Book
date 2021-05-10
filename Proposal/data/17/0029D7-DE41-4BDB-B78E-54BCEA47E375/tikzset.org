@@ -1,0 +1,22 @@
+#+BEGIN_LATEX:
+\tikzset{
+%   pinstyle/.style={pin edge={to-,thin,black}}, % you have another one below
+   block/.style = {draw, rectangle,
+       minimum height=1cm,
+       align = center,
+       minimum width=1.7cm
+   },
+   input/.style = {coordinate,node distance=1cm},
+   output/.style = {coordinate,node distance=1cm},
+   arrow/.style={draw, -latex,node distance=2cm},
+   pinstyle/.style = {pin edge={latex-, black,node distance=2cm}},
+   sum/.style = {draw, circle, node distance=1cm},
+   gain/.style = {
+     regular polygon, regular polygon sides=4,
+     draw, fill=white, text width=1em,
+     inner sep=0mm, outer sep=0mm,
+     shape border rotate=-90
+     },
+   dot/.style={circle,fill,draw,inner sep=0pt,minimum size=3pt}
+ }
+ #+END_LATEX
