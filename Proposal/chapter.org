@@ -108,7 +108,7 @@ In this scenario of variety, it is crucial distinguishing between project-based 
 
 
 - [ ] SYSTEM IDENTIFICATION (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
-  It should be moved after the system
+  It should be moved after the system. To system Modelling approach. 
   
 The objective of system identification is to build mathematical models of dynamic systems using measured data from a system (Ljung, 1998).
 There are several system identification approaches to model different systems, for instance, transfer function.
@@ -120,7 +120,7 @@ It means that at the end of the modeling, a mathematical description represents 
 Black-box modeling is a trial-and-error method, where parameters of various models are estimated, and the output from those models is compared to the results with the opportunity for further refinement. The resulting models vary in complexity depending on the flexibility needed to account for both the dynamics and any disturbance in the data.
 The transfer function is used in order to show the system dynamics explicitly
 
-_Source Paper07_
+_Source Paper07_ Stays here
         
        Several elements found in this literature review connect the characteristics of construction projects to the characteristics of a dynamic system.
        As shown in Figure 4, the interconnectivity is explicit between project stages, in the event that subsequent phases rely on the accomplishment and performance of previous ones.
@@ -201,6 +201,7 @@ However, ``because of the steady state nature of this model, the system more clo
 ** Mathematical foundation of the Productivity Function
 
 
+(Explain differential equations, the frequency domain and transformation)
 
 Although much work has been done on production management of repetitive construction processes, more studies need to be conducted to develop equations to quantify project-driven production systems in construction.
 The objective of this paper is to formulate variants of manufacturing production equations to calculate the production performance of repetitive construction processes for benchmarking purposes.
@@ -208,7 +209,7 @@ Furthermore, this paper shows the calculation of theoretical production paramete
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
 
 
-*** TODO Explain transient and steady-state
+*** TODO Explain transient and steady-state (move to section above, foundation)
 - [ ] Why the transient
   TRANSIENT STATE, STEADY-STATE, AND UNSTEADY-STATE RESPONSE
   Two parts compose a system response in the time domain, transient, and steady- or unsteady-state.
@@ -220,7 +221,7 @@ The contribution of this paper to the body of knowledge are algebraic equations 
   On the other hand, if the response never reaches a final value or oscillates surpassing the threshold when $t→∞$ the system is then at unsteady-state.
   Consequently, the system outputs at unsteady-state vary with time during the on-time interval even induced by an invariable input.
 
-**** Mathematical foundation of production
+**** Mathematical foundation of production (repeated title)
 
  Repetitive construction projects falls into a fuzzy area where both project management and manufacturing overlap.
  Repetitive construction projects are constituted by several contractors executing processes that they are specialized in, as for instance plumbers and electricians, that in the end, build a one-of-a-kind product.
@@ -311,7 +312,7 @@ Black-box modeling is a trial-and-error method, where parameters of various mode
 The resulting models vary in complexity depending on the flexibility needed to account for both the dynamics and any disturbance in the data.
 The transfer function is used to show the system dynamics explicitly.
 
-*** Step response: Transient and steady state
+*** Step response: Transient and steady state (explain the equation, move it, or clean it)
 
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, $y_{\mbox{ssv}}$, when the time, $t$, goes to infinity (Equation~\ref{eq:steady state}).
@@ -407,9 +408,6 @@ Simplifications and assumptions have to be made; however, the models are often o
  
 **** WORKING Cycle-time
 
-
-
-   
 
 The accumulated throughput over time results in units of a service or product produced over time.
 The time taken to produce one output is the cycle time.
