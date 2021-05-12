@@ -209,7 +209,16 @@ The contribution of this paper to the body of knowledge are algebraic equations 
 
 
 *** TODO Explain transient and steady-state
-- [ ] Why the transient 
+- [ ] Why the transient
+  TRANSIENT STATE, STEADY-STATE, AND UNSTEADY-STATE RESPONSE
+  Two parts compose a system response in the time domain, transient, and steady- or unsteady-state.
+  Transient is the immediate system response to an input from an equilibrium state.
+  After the transient state, a system response can assume a steady- or unsteady-state.
+  In a stable system, the output tends to a constant value when $t→∞$ (Mandal, 2006).
+  When the system response enters and stays in the threshold around the constant value the system reached the steady-state (Mandal, 2006).
+  The time the stable system takes to reach the steady-state is the settling time, $t_s$.
+  On the other hand, if the response never reaches a final value or oscillates surpassing the threshold when $t→∞$ the system is then at unsteady-state.
+  Consequently, the system outputs at unsteady-state vary with time during the on-time interval even induced by an invariable input.
 
 **** Mathematical foundation of production
 

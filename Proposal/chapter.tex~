@@ -1,4 +1,4 @@
-% Created 2021-05-12 Wed 19:49
+% Created 2021-05-12 Wed 19:52
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -38,7 +38,7 @@
 
 
 \section{Guidelines}
-\label{sec:orgc31bd06}
+\label{sec:orga6a775f}
 \begin{verbatim}
 (tex-count-word)
 \end{verbatim}
@@ -47,7 +47,7 @@
 \end{itemize}
 
 \section{Abstract}
-\label{sec:org05b498e}
+\label{sec:org33116f3}
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
@@ -60,14 +60,14 @@ Productivity Function is applied in feedback loop control yielding a robust appr
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
 \section{Introduction}
-\label{sec:orge797b32}
+\label{sec:org615283f}
 Despite the name of the title of this chapter, you will not find equations here.
 Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
 You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
 \section{Lean principles and production theory [0/2]}
-\label{sec:org11d4844}
+\label{sec:org0e0be6e}
 \subsection{Production in manufacturing (Factory Physics)}
-\label{sec:org27cae0d}
+\label{sec:orgf5adac6}
 The manufacturing industry is knowable of its production.
 From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
 Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -80,7 +80,7 @@ The process can be determined on physical knwon equations or most oftern determi
 The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
 \subsection{The manufacturing theory does not apply directly to construction}
-\label{sec:org5342485}
+\label{sec:org6738c7f}
 
 Manufacturing is either a continous or a repective process.
 Machinery and human resources are specialized and qualified.
@@ -91,9 +91,9 @@ While capacity is knwon and measured in manufacturing, there was no way to measu
 Increasing production in construction often means add more human resources.
 That often cause decrease of productivity due to lack of space, tools, skills, etc.
 \section{Productivity Function [0/4]}
-\label{sec:orgcc756e6}
+\label{sec:org922e55f}
 \subsection{Production process system representation [100\%]}
-\label{sec:org5635911}
+\label{sec:orgfd44def}
 
 \begin{itemize}
 \item[{$\square$}] A SYSTEM VIEW (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
@@ -183,14 +183,14 @@ Operating on possibly the same conditions of wave theory—linear/nonlinear, det
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
-\caption{\label{fig:orga91f443}A typical feedback loop control}
+\caption{\label{fig:org84f6810}A typical feedback loop control}
 \end{figure}
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/Construction_project_driven_production_system.eps}
-\caption{\label{fig:org484eeff}Construction project-driven production system}
+\caption{\label{fig:org8426fe8}Construction project-driven production system}
 \end{figure}
 
 
@@ -201,28 +201,25 @@ The linear scheduling method (LSM) \cite{Harmelink1998,Su2016} and line-of-balan
 However, ``because of the steady state nature of this model, the system more closely represents industrial production processes than construction processes \cite{Thomas1990}.'' Short production runs \cite{Bashford2005}, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships \cite{Bertelsen2003,Lutz1993} frequently prevent repetitive production processes in construction to reach steady state \cite{Antunes2015a,Walsh2007}.
 
 \subsection{Mathematical foundation of the Productivity Function}
-\label{sec:org53024d2}
+\label{sec:org2daaca7}
+
+
 
 Although much work has been done on production management of repetitive construction processes, more studies need to be conducted to develop equations to quantify project-driven production systems in construction.
 The objective of this paper is to formulate variants of manufacturing production equations to calculate the production performance of repetitive construction processes for benchmarking purposes.
 Furthermore, this paper shows the calculation of theoretical production parameters such as capacity and cycle time, as well as the influence of transient time on productivity.
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
 
-\begin{itemize}
-\item[{$\square$}] Transfer Function (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
-\end{itemize}
-The transfer function of a system, G, is a transformation from an input function into an output function, capable of describing an output (or multiple outputs) by an input (or multiple inputs) change, \(y(t) = G(t) \star u(t)\).
-Although generic, the application of the transfer function concept is restricted to systems that are represented by ordinary differential equations (Mandal, 2006).
-Ordinary differential equations can represent most dynamic systems in its entirety or at least in determined operational regions producing accurate results (Altmannand Macdonald, 2005; Mandal, 2006).
-As a consequence, the transfer function modeling is extensively applied in the analysis and design of systems (Ogata, 2010). A generic transfer function makes possible representing the system dynamics by algebraic equations in the frequency domain, \(s\).
-In the frequency domain, the convolution operation transforms into an algebraic multiplication in s, which is simpler to manipulate. Mathematically, “the transfer function of a linear system is defined as the ratio of the Laplace transform of the output, y(t), to the Laplace transform of the input, u(t), under the assumption that all initial conditions are zero” (Mandal, 2006), Equation 1. Where the highest power of s in the denominator of the transfer function is equal to n, the system is called anth- order system.
 
 \subsubsection{TODO Explain transient and steady-state}
-\label{sec:orgc58ea25}
+\label{sec:org8062967}
+\begin{itemize}
+\item[{$\square$}] Why the transient
+\end{itemize}
 
 \begin{enumerate}
 \item Mathematical foundation of production
-\label{sec:orgb87dee0}
+\label{sec:org04b1e88}
 
 Repetitive construction projects falls into a fuzzy area where both project management and manufacturing overlap.
 Repetitive construction projects are constituted by several contractors executing processes that they are specialized in, as for instance plumbers and electricians, that in the end, build a one-of-a-kind product.
@@ -237,7 +234,7 @@ The steady-state of a system
 \end{itemize}
 
 \item Explain traditional methods of steady-state
-\label{sec:org1a400f7}
+\label{sec:orgc8ddbb2}
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
 When the output reaches this value, the response is then at steady state.
@@ -256,7 +253,7 @@ Finally, if the system is stable; the output will tend to the steady state value
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/FIG02Transient_analysis.eps}
-\caption{\label{fig:org8d96d9f}Transient analysis for unit step input \label{fig:Transient}}
+\caption{\label{fig:orgc5aa6ff}Transient analysis for unit step input \label{fig:Transient}}
 \end{figure}
 
 
@@ -284,10 +281,23 @@ The work stream is a continuous flow of specialized processes and equipment runn
 	P(s) = \frac{Y(s)}{U(s)} =
 	\frac{(\beta_m s^m + \beta_{m-1} s^{m-1}+\ldots+\beta_0)}{(\alpha_n s^n + \alpha_{n-1} s^{n-1}+\ldots+\alpha_0)}
 \end{equation}
+
+
+\begin{itemize}
+\item[{$\square$}] Transfer Function (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
+\end{itemize}
+
+The transfer function of a system, G, is a transformation from an input function into an output function, capable of describing an output (or multiple outputs) by an input (or multiple inputs) change, \(y(t) = G(t) \star u(t)\).
+Although generic, the application of the transfer function concept is restricted to systems that are represented by ordinary differential equations (Mandal, 2006).
+Ordinary differential equations can represent most dynamic systems in its entirety or at least in determined operational regions producing accurate results (Altmannand Macdonald, 2005; Mandal, 2006).
+As a consequence, the transfer function modeling is extensively applied in the analysis and design of systems (Ogata, 2010). A generic transfer function makes possible representing the system dynamics by algebraic equations in the frequency domain, \(s\).
+In the frequency domain, the convolution operation transforms into an algebraic multiplication in s, which is simpler to manipulate. Mathematically, “the transfer function of a linear system is defined as the ratio of the Laplace transform of the output, y(t), to the Laplace transform of the input, u(t), under the assumption that all initial conditions are zero” (Mandal, 2006), Equation 1.
+Where the highest power of \(s\) in the denominator of the transfer function is equal to n, the system is called a nth-order system.
 \end{enumerate}
 
+
 \subsection{Modelling method [0/0]}
-\label{sec:org1e6212d}
+\label{sec:orgba0ed7a}
 \uline{Source Paper04}
 
 The objective of system identification is to build mathematical models of dynamic systems using measured data from a system \citep{Ljung1999}.
@@ -303,7 +313,7 @@ The resulting models vary in complexity depending on the flexibility needed to a
 The transfer function is used to show the system dynamics explicitly.
 
 \subsubsection{Step response: Transient and steady state}
-\label{sec:org8d04a9c}
+\label{sec:orgcaa8237}
 
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
@@ -330,9 +340,9 @@ The step function in the time domain is given by:
 \end{equation}
 
 \subsection{Production Theory for Construction}
-\label{sec:org69e1031}
+\label{sec:org5ff6838}
 \subsubsection{Production forecast}
-\label{sec:orgc98c89f}
+\label{sec:org7cf6ca6}
 
 Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
 Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
@@ -354,7 +364,7 @@ Following the framework, an analytical technique to describe the dynamic conditi
 This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
 
 \subsubsection{Variability analysis}
-\label{sec:org108d3e8}
+\label{sec:org6433548}
 ``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
 In other words, the system will achieve its maximum performance when there is no variability.
 That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
@@ -382,12 +392,12 @@ Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by 
 \end{equation}
 
 \subsubsection{Production benchmark}
-\label{sec:org4e72eac}
+\label{sec:orgedd4fde}
 \subsubsection{Production plan, monitoring, and control}
-\label{sec:orge30d369}
+\label{sec:orgecc70e3}
 \begin{enumerate}
 \item Throughput
-\label{sec:org765a5fe}
+\label{sec:orgcab8f2e}
 Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
 Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
 When the relationship between resources and throughput can be established;
@@ -403,7 +413,7 @@ Explicitly incorporating all factors that influence productivity in a model is a
 Simplifications and assumptions have to be made; however, the models are often over simplified.
 
 \item Cycle-time
-\label{sec:org76bbc39}
+\label{sec:org2444f46}
 
 
 
@@ -453,14 +463,14 @@ y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_
 
 \begin{enumerate}
 \item Average cycle-time
-\label{sec:org9abdec8}
+\label{sec:org688ee62}
 \item Worst cycle-time
-\label{sec:org174740c}
+\label{sec:orgdd1be7b}
 \item Best cycle-time
-\label{sec:orgeb7113b}
+\label{sec:org346cce1}
 \end{enumerate}
 \item Capacity
-\label{sec:orged64af0}
+\label{sec:org0880565}
 ``Law (Capacity): In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.]{Hopp2001}.''
 Furthermore, in most cases, releasing work into the system above the capacity causes the system to become unstable \citep{Hopp2001}.
 According to these definitions, it would be correct to state that a process' capability is the highest throughput achievable without the process becoming unstable.
@@ -483,24 +493,24 @@ Regardless of the equation used for productivity measurement \citep{Thomas1990},
 
 
 \section{Applicability}
-\label{sec:org21177d9}
+\label{sec:org5dfe49d}
 \subsection{Automation and technology}
-\label{sec:org526128e}
+\label{sec:orgfe6844c}
 \subsubsection{Supervisory control and data acquisition (SCADA)}
-\label{sec:org2929ba4}
+\label{sec:orge1f9da3}
 \subsubsection{Challenges}
-\label{sec:orgddf4c5d}
+\label{sec:orga5f3170}
 \subsection{Decision-making support}
-\label{sec:org7c2a958}
+\label{sec:org99e4850}
 \subsection{Benefits and impacts}
-\label{sec:orgdcc7b8f}
+\label{sec:orge2ec573}
 \section{Discussion}
-\label{sec:org0fba193}
+\label{sec:orgf3b6b8b}
 \section{Conclusion}
-\label{sec:org2caede3}
+\label{sec:org7df6744}
 
 \section{Plan}
-\label{sec:org8edf941}
+\label{sec:orgc0e0ab1}
 \begin{center}
 \begin{tabular}{lrlrr}
 Section & Words & Current & Effort & Current\\
@@ -518,10 +528,10 @@ Total & 7000 & 0 & 35 & 1\\
 \end{tabular}
 \end{center}
 \subsection{6 Section}
-\label{sec:org266ec58}
+\label{sec:orga43f411}
 
 \section{References}
-\label{sec:org51120be}
+\label{sec:orgde87518}
 
 \printbibliography[title=none]
 \end{document}
