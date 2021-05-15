@@ -1,4 +1,4 @@
-% Created 2021-05-13 Thu 19:57
+% Created 2021-05-15 Sat 16:19
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -38,7 +38,7 @@
 
 
 \section{Guidelines}
-\label{sec:org3c9151f}
+\label{sec:org21c5eaf}
 \begin{verbatim}
 (tex-count-word)
 \end{verbatim}
@@ -47,7 +47,7 @@
 \end{itemize}
 
 \section{Abstract}
-\label{sec:orgffedb87}
+\label{sec:org42045c1}
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
@@ -60,14 +60,14 @@ Productivity Function is applied in feedback loop control yielding a robust appr
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
 \section{Introduction}
-\label{sec:org7876525}
+\label{sec:org10253c4}
 Despite the name of the title of this chapter, you will not find equations here.
 Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
 You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
 \section{Lean principles and production theory [0/2]}
-\label{sec:orgd513f08}
+\label{sec:orge819158}
 \subsection{Production in manufacturing (Factory Physics)}
-\label{sec:orgb8325be}
+\label{sec:org2da6d13}
 The manufacturing industry is knowable of its production.
 From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
 Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -80,7 +80,7 @@ The process can be determined on physical knwon equations or most oftern determi
 The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
 \subsection{The manufacturing theory does not apply directly to construction}
-\label{sec:orgbee6fea}
+\label{sec:org14b5a65}
 
 Manufacturing is either a continous or a repective process.
 Machinery and human resources are specialized and qualified.
@@ -92,28 +92,91 @@ Increasing production in construction often means add more human resources.
 That often cause decrease of productivity due to lack of space, tools, skills, etc.
 
 \section{Productivity Function [0/2]}
-\label{sec:org4746909}
+\label{sec:orgc85a4c8}
 \subsection{Production process system representation [100\%]}
-\label{sec:orgd79b23c}
+\label{sec:org3acf182}
 
 \begin{itemize}
 \item[{$\square$}] A SYSTEM VIEW (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
 Mathematical models have enabled a comprehensive understanding of production mechanisms supporting practices to improve production in manufacturing.
 Hopp and Spearman (1996) committed to the comprehension of the manufacturing production system.
-The system approach or system analysis was the problem-solving methodology of choice (Hopp and Spearman, 1996).
+The system approach or system analysis was the problem-solving methodology of choice (\citep{Hopp2001}).
 The first step of this methodology is a system view.
 In the system view, the problem is observed as a system established by a set of subsystems that interact with each other.
 Using the system approach, Hopp and Spearman elaborated significant laws to queue systems and the general production in manufacturing.
 The conservation of material and capacity laws (Hopp and Spearman, 1996) are particularly attractive, not only according to their importance, but also because they explicitly state one or more system restrictions.
-
-\texttt{These laws place reliance on stable systems, with long runs and at steady-state conditions.}
-However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (Antunes and Gonzalez, 2015).
+\item[{$\square$}] What is a system
+These laws place reliance on stable systems, with long runs and at steady-state conditions.
+However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (\citep{Antunes2015} Antunes and Gonzalez, 2015).
 Hence, unless a construction process fulfills the stability and steady-state conditions, the manufacturing model and, consequently, the laws do not accurately represent production in construction.
 Alternatively, variants of manufacturing laws must be developed to production in project-based systems that not fulfill those requirements.
-In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.
+In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.=
+  The input is applied to a process to produce an output.
+These three elements constitute a input/output system (Figure \ref{:fig_simple_system});  which we will refer simply as system from now on.
+Input are, for instance, materials, tools, equipment, labor, management, time, and weather conditions \textbf{(Blanchard and Fabrycky, 2011)}.
+\textbf{``Some of these factors, such as material, also become a part of the output product, while others are needed for control purposes (e.g., management).
+Still another category includes environmental impacts (e.g., weather conditions) (Remold, 1989).''}
+The outputs are (usually) the product of the processes, for example, absolute quantities such as squared meters of plastered wall, meters drilled or relative measurement of progress such as the percentage of activity completion (\citep{Antunes2016}).
+\uline{This last may be especially useful for Lean Construction practitioners that utilize the Planned Percent Complete (PPC) as the tracking tool.}
+The process is the transformation procedure, or operation that when applied the input will create the output.
+For instance, platerboads installation an drilling for the ouputs aforementioned.
+The Figure \ref{:fig_simple_system} shows a single output and single input (SISO) for simplicty purposes.
+A system can be composed by multiple inputs to single or multiple outputs (MISO and MIMO respectively) and also single input to multiple outputs.
+Regardless of the system composition in terms of how many inputs and outputs or what the input(s), output(s) and process are; there are a few restrictions to a system.
+There is no output on lack of input.
+There is no output without a process.
 \end{itemize}
 
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=150]{Figures/system_basic.png}
+\caption{\label{fig:orgc2a104d}Simple system}
+\end{figure}
+
+
+
+\begin{itemize}
+\item[{$\square$}] Project as cycle
+Most projects follow a cycle similar to plan-do-check-act (PDCA), also originally developed for manufacturing operations.
+PDCA applies to continuous process improvement (Rumane and Badiru, 2013, p.53) and consists of a four-stages infinite loop.
+First, the team establishing goals and develop the strategies to achieve them, creating a plan.
+Second, the plan is then implemented.
+The team carries out the actions addressing key points, according to the plan.
+Third, the team measures the outcomes of their actions comparing the results to the goals.
+Fourth, where the current process performance matches the goal, the team institutionalizes the new process’s performance, thus setting a benchmark, as well as the actions performed to achieve the goal, thus creating standard procedures.
+In the case where the actions are not effective, the team must return to the first cycle stage.
+The PDCA cycle restarts to implement further improvements.
+\emph{In certain way, it means a system that is being constantly feedback by the current output state.}
+\emph{If the current ouput state is no the one desired, the input will change to match achieve the output goal.}
+\emph{The process improvement itself will alter the process as such the system will have increased the output using a constany input.}
+/In terms of system, it will look like figure \ref{:closed_loop}.
+\end{itemize}
+
+(Figure)
+
+
+\begin{center}
+\includegraphics[width=.9\linewidth]{Figures/system_feedback_loop.png}
+\end{center}
+
+\# \#+ATTR\textsubscript{HTML}: :height 300
+
+
+
+
+
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
+\caption{\label{fig:org1330b23}A typical feedback loop control}
+\end{figure}
+
+
+\begin{itemize}
+\item[{$\square$}] Construction System
 \uline{Source Paper07} Stays here
 
 Several elements found in this literature review connect the characteristics of construction projects to the characteristics of a dynamic system.
@@ -133,6 +196,7 @@ The building block is formed by shifting and dilating the basis functions, the m
 A wavelet network may be used as universal function approximator (“a universal function approximator is a system that, given a set of predictor variables, can output an accurate estimate of some predicted variable” [97]) to estimate unknown nonlinear functions and to attain a required control performance.
 A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
 Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
+\end{itemize}
 
 
 \begin{itemize}
@@ -170,18 +234,12 @@ Operating on possibly the same conditions of wave theory—linear/nonlinear, det
 \end{figure}
 \#+END\textsubscript{LATEX}
 
-(Figure)
-\begin{figure}[htbp]
-\centering
-\includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
-\caption{\label{fig:orgb4856c6}A typical feedback loop control}
-\end{figure}
 
 (Figure)
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/Construction_project_driven_production_system.eps}
-\caption{\label{fig:orga143932}Construction project-driven production system}
+\caption{\label{fig:org9b8666a}Construction project-driven production system}
 \end{figure}
 
 
@@ -193,7 +251,7 @@ However, ``because of the steady state nature of this model, the system more clo
 Short production runs \cite{Bashford2005}, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships \cite{Bertelsen2003,Lutz1993} frequently prevent repetitive production processes in construction to reach steady state \cite{Antunes2015a,Walsh2007}.
 
 \subsection{Mathematical foundation of the Productivity Function}
-\label{sec:orgd6d817c}
+\label{sec:org28fa359}
 
 (Explain differential equations, the frequency domain and transformation)
 
@@ -203,7 +261,7 @@ Furthermore, this paper shows the calculation of theoretical production paramete
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
 
 \subsubsection{Step response: Transient and steady state (explain the equation, move it, or clean it)}
-\label{sec:orgfcdd5e2}
+\label{sec:orgb03b366}
 
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
@@ -230,7 +288,7 @@ The step function in the time domain is given by:
 \end{equation}
 
 \subsubsection{TODO Explain transient and steady-state (move to section above, foundation)}
-\label{sec:org6a8f40c}
+\label{sec:org342e5d8}
 \begin{itemize}
 \item[{$\square$}] Why the transient
 TRANSIENT STATE, STEADY-STATE, AND UNSTEADY-STATE RESPONSE
@@ -246,7 +304,7 @@ Consequently, the system outputs at unsteady-state vary with time during the on-
 
 \begin{enumerate}
 \item Mathematical foundation of production (repeated title)
-\label{sec:orgfe77c2f}
+\label{sec:orgbd65a52}
 
 Repetitive construction projects falls into a fuzzy area where both project management and manufacturing overlap.
 Repetitive construction projects are constituted by several contractors executing processes that they are specialized in, as for instance plumbers and electricians, that in the end, build a one-of-a-kind product.
@@ -261,7 +319,7 @@ The steady-state of a system
 \end{itemize}
 
 \item Explain traditional methods of steady-state
-\label{sec:org0d2df58}
+\label{sec:org43c108a}
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
 When the output reaches this value, the response is then at steady state.
@@ -280,7 +338,7 @@ Finally, if the system is stable; the output will tend to the steady state value
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/FIG02Transient_analysis.eps}
-\caption{\label{fig:org02ada21}Transient analysis for unit step input \label{fig:Transient}}
+\caption{\label{fig:org530039e}Transient analysis for unit step input \label{fig:Transient}}
 \end{figure}
 
 
@@ -324,7 +382,7 @@ Where the highest power of \(s\) in the denominator of the transfer function is 
 
 
 \subsection{Modelling method [0/0]}
-\label{sec:org1fab8ff}
+\label{sec:org2e98549}
 
 \begin{itemize}
 \item[{$\square$}] SYSTEM IDENTIFICATION (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
@@ -356,9 +414,9 @@ The resulting models vary in complexity depending on the flexibility needed to a
 The transfer function is used to show the system dynamics explicitly.
 
 \subsection{Production Theory for Construction}
-\label{sec:org5dcaaf2}
+\label{sec:orgf43656f}
 \subsubsection{Production forecast}
-\label{sec:org129252e}
+\label{sec:org3837c66}
 
 Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
 Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
@@ -380,7 +438,7 @@ Following the framework, an analytical technique to describe the dynamic conditi
 This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
 
 \subsubsection{Variability analysis}
-\label{sec:org6501495}
+\label{sec:org0de6b00}
 ``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
 In other words, the system will achieve its maximum performance when there is no variability.
 That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
@@ -408,12 +466,12 @@ Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by 
 \end{equation}
 
 \subsubsection{Production benchmark}
-\label{sec:org765ae65}
+\label{sec:orgaa7a37a}
 \subsubsection{Production plan, monitoring, and control}
-\label{sec:org60a8d8a}
+\label{sec:org183d531}
 \begin{enumerate}
 \item Throughput
-\label{sec:orgcf7acf5}
+\label{sec:org61de3a4}
 Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
 Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
 When the relationship between resources and throughput can be established;
@@ -429,7 +487,7 @@ Explicitly incorporating all factors that influence productivity in a model is a
 Simplifications and assumptions have to be made; however, the models are often over simplified.
 
 \item Cycle-time
-\label{sec:org3c86115}
+\label{sec:org643896e}
 
 The accumulated throughput over time results in units of a service or product produced over time.
 The time taken to produce one output is the cycle time.
@@ -475,14 +533,14 @@ y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_
 
 \begin{enumerate}
 \item Average cycle-time
-\label{sec:org098bf3b}
+\label{sec:orgc7272c2}
 \item Worst cycle-time
-\label{sec:org48f8f8f}
+\label{sec:orgace736c}
 \item Best cycle-time
-\label{sec:orge474a19}
+\label{sec:orgc480777}
 \end{enumerate}
 \item Capacity
-\label{sec:orge2485e6}
+\label{sec:org0c1ee71}
 ``Law (Capacity): In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.]{Hopp2001}.''
 Furthermore, in most cases, releasing work into the system above the capacity causes the system to become unstable \citep{Hopp2001}.
 According to these definitions, it would be correct to state that a process' capability is the highest throughput achievable without the process becoming unstable.
@@ -505,32 +563,32 @@ Regardless of the equation used for productivity measurement \citep{Thomas1990},
 
 
 \section{Applicability}
-\label{sec:orgafb37db}
+\label{sec:orga4732ba}
 \subsection{Automation and technology}
-\label{sec:org5d6bda7}
+\label{sec:org3153171}
 \subsubsection{Supervisory control and data acquisition (SCADA)}
-\label{sec:orgf56c952}
+\label{sec:org288420c}
 \subsubsection{Challenges}
-\label{sec:org155a83c}
+\label{sec:org004ad0f}
 \subsection{Decision-making support}
-\label{sec:org7f543e6}
+\label{sec:org08d43f5}
 \subsection{Benefits and impacts}
-\label{sec:orga9fc214}
+\label{sec:org7dfc9c7}
 \section{Discussion}
-\label{sec:org811cbed}
+\label{sec:org3d6557d}
 \section{Conclusion}
-\label{sec:orgc85f8f4}
+\label{sec:orgeb12d76}
 
 \section{Plan}
-\label{sec:org2389abc}
+\label{sec:orgbde4fdb}
 \begin{center}
 \begin{tabular}{lrlrr}
 Section & Words & Current & Effort & Current\\
 \hline
 Plan &  &  & 1 & 1\\
-Introduction & 500 &  & 4 & 2\\
+Introduction & 500 &  & 4 & \\
 Lean principles and production theory & 1500 &  & 5 & \\
-Productivity Function & 2000 &  & 5 & \\
+Productivity Function & 2000 &  & 5 & 5\\
 Applicability & 1500 &  & 5 & \\
 Discussion & 1000 &  & 5 & \\
 Conclusion & 500 &  & 5 & \\
@@ -540,10 +598,10 @@ Total & 7000 & 0 & 35 & 3\\
 \end{tabular}
 \end{center}
 \subsection{6 Section}
-\label{sec:orgdb39103}
+\label{sec:orge0ce34d}
 
 \section{References}
-\label{sec:orgc8263dd}
+\label{sec:org5a4ab2d}
 
 \printbibliography[title=none]
 \end{document}

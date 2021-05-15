@@ -63,11 +63,11 @@ The Productivity Function provides a mathematical foundation for the calculation
 Productivity Function is applied in feedback loop control yielding a robust approach to plan, control, and optimize production.
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
-* WORKING Introduction
+* NEXT Introduction
     Despite the name of the title of this chapter, you will not find equations here.
     Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
     You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
-* WORKING Lean principles and production theory [0/2]
+* NEXT Lean principles and production theory [0/2]
 ** Production in manufacturing (Factory Physics)
      The manufacturing industry is knowable of its production.
      From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
@@ -91,44 +91,126 @@ Finally, the chapter presents automated methods of data collection that feed the
        Increasing production in construction often means add more human resources.
        That often cause decrease of productivity due to lack of space, tools, skills, etc.
 
-* Productivity Function [0/2]
-** NEXT Production process system representation [100%]
+* WORKING Productivity Function [0/2]
+** WORKING Production process system representation [100%]
 
 - [ ] A SYSTEM VIEW (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
   Mathematical models have enabled a comprehensive understanding of production mechanisms supporting practices to improve production in manufacturing.
   Hopp and Spearman (1996) committed to the comprehension of the manufacturing production system.
-  The system approach or system analysis was the problem-solving methodology of choice (Hopp and Spearman, 1996).
+  The system approach or system analysis was the problem-solving methodology of choice (citep:Hopp2001).
   The first step of this methodology is a system view.
   In the system view, the problem is observed as a system established by a set of subsystems that interact with each other.
   Using the system approach, Hopp and Spearman elaborated significant laws to queue systems and the general production in manufacturing.
   The conservation of material and capacity laws (Hopp and Spearman, 1996) are particularly attractive, not only according to their importance, but also because they explicitly state one or more system restrictions.
-
+- [ ] What is a system
   These laws place reliance on stable systems, with long runs and at steady-state conditions.
-  However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (Antunes and Gonzalez, 2015).
+  However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (citep:Antunes2015 Antunes and Gonzalez, 2015).
   Hence, unless a construction process fulfills the stability and steady-state conditions, the manufacturing model and, consequently, the laws do not accurately represent production in construction.
   Alternatively, variants of manufacturing laws must be developed to production in project-based systems that not fulfill those requirements.
   In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.=
+    The input is applied to a process to produce an output.
+  These three elements constitute a input/output system (Figure ref::fig_simple_system);  which we will refer simply as system from now on.
+  Input are, for instance, materials, tools, equipment, labor, management, time, and weather conditions *(Blanchard and Fabrycky, 2011)*.
+  *``Some of these factors, such as material, also become a part of the output product, while others are needed for control purposes (e.g., management).
+  Still another category includes environmental impacts (e.g., weather conditions) (Remold, 1989).''*
+  The outputs are (usually) the product of the processes, for example, absolute quantities such as squared meters of plastered wall, meters drilled or relative measurement of progress such as the percentage of activity completion (citep:Antunes2016).
+  _This last may be especially useful for Lean Construction practitioners that utilize the Planned Percent Complete (PPC) as the tracking tool._
+  The process is the transformation procedure, or operation that when applied the input will create the output.
+  For instance, platerboads installation an drilling for the ouputs aforementioned.
+  The Figure ref::fig_simple_system shows a single output and single input (SISO) for simplicty purposes.
+  A system can be composed by multiple inputs to single or multiple outputs (MISO and MIMO respectively) and also single input to multiple outputs.
+  Regardless of the system composition in terms of how many inputs and outputs or what the input(s), output(s) and process are; there are a few restrictions to a system.
+  There is no output on lack of input.
+  There is no output without a process.
+  
+  
+#+BEGIN_SRC ditaa :file Figures/system_basic.png :cmdline -rS
+       +---------+
+ input |         | output
+>------+ Process +------->
+       |         |
+       +---------+
+#+END_SRC
+
+#+CAPTION: Simple system
+#+NAME: fig_simple_system
+#+ATTR_HTML: :height 300
+#+ATTR_LATEX: :height 150 
+#+RESULTS:
+[[file:Figures/system_basic.png]]
 
 
-_Source Paper07_ Stays here
-        
-       Several elements found in this literature review connect the characteristics of construction projects to the characteristics of a dynamic system.
-       As shown in Figure 4, the interconnectivity is explicit between project stages, in the event that subsequent phases rely on the accomplishment and performance of previous ones.
-       This dependent connection remains valid for divided n-substages or n-activities and also applies to the proposed framework.
-       The dependence of processes and/or activities is well documented in the literature and well known by practitioners.
-       An activity or stage may impair or favour a successive action depending on the level of correlation and dependence.
-       The interdependence of activities forms a conduit to the propagation of unsure events. Potential risks captured through the entire project life may impact project execution whenever not properly treated, resulting in project deviations.
-       This sequence of events is represented in the system by the flow of uncertainty to risk and the occurrence of risk events, through risk management filtering actions—avoidance, acceptance, sharing, transference, mitigation, motivation—and, finally, to variability.
-       This flow resembles an intrinsic characteristic of systems in the presence of disturbance or noise.
 
-       Control systems may transmit unfiltered noise across connections affecting vulnerable components and causing disturbances or unpredicted behaviour.
-       Although the level of influence in this flow of sequential, parallel or overlapping relationships in the process or activity network have not been investigated at this point, understanding how risk transforms into variability, and especially how variability affects networked activities, propitiates an opportunity to develop methods aimed at avoiding and mitigating (filtering) the propagation of risk (noise). Regarding risk materialization in variability, different outcomes build on how concentrated or distributed the risk impact was.
-       This scenario requires a function capable of scale variation and energy conservation (impact) when calculating the functional energy.
-       The wavelet network evolved from the Fourier transformation: “wavelet network is a type of building block for approximation of unknown functions based on the concept of the multi-resolution approximation.
-       The building block is formed by shifting and dilating the basis functions, the mother wavelet and father wavelet” [97].
-       A wavelet network may be used as universal function approximator (“a universal function approximator is a system that, given a set of predictor variables, can output an accurate estimate of some predicted variable” [97]) to estimate unknown nonlinear functions and to attain a required control performance.
-       A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
-       Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
+- [ ] Project as cycle
+  Most projects follow a cycle similar to plan-do-check-act (PDCA), also originally developed for manufacturing operations.
+  PDCA applies to continuous process improvement (Rumane and Badiru, 2013, p.53) and consists of a four-stages infinite loop.
+  First, the team establishing goals and develop the strategies to achieve them, creating a plan.
+  Second, the plan is then implemented.
+  The team carries out the actions addressing key points, according to the plan.
+  Third, the team measures the outcomes of their actions comparing the results to the goals.
+  Fourth, where the current process performance matches the goal, the team institutionalizes the new process’s performance, thus setting a benchmark, as well as the actions performed to achieve the goal, thus creating standard procedures.
+  In the case where the actions are not effective, the team must return to the first cycle stage.
+  The PDCA cycle restarts to implement further improvements.
+  /In certain way, it means a system that is being constantly feedback by the current output state./
+  /If the current ouput state is no the one desired, the input will change to match achieve the output goal./
+  /The process improvement itself will alter the process as such the system will have increased the output using a constany input./
+  /In terms of system, it will look like figure ref::closed_loop.
+
+(Figure)
+
+
+#+BEGIN_SRC ditaa :file Figures/system_feedback_loop.png :cmdline -rS
+	      +-------+           +--------+       +---------+
+	 plan |       | deviation |        | input |         | output
+	>-----+ Check +----->-----+ Action +--->---+ Process +----+--->
+	      |       |           |        |       |         |    |
+	      +---+---+           +--------+       +---------+    |
+		  |                                               |
+                  +----------------------<------------------------+
+#+END_SRC
+
+#+RESULTS:
+[[file:Figures/system_feedback_loop.png]]
+
+
+#+CAPTION: Feedback Loop (PDCA)
+#+NAME: fig_feedback_loop
+# #+ATTR_HTML: :height 300
+# #+ATTR_LATEX: :height 150 
+
+
+
+
+
+
+
+#+CAPTION: A typical feedback loop control
+#+NAME: fig_a_typical_feedback_loop_control
+#+ATTR_HTML: :height 300
+#+ATTR_LATEX: :height 150
+[[./Figures/A_typical_feedback_loop_control.eps]]
+
+
+- [ ] Construction System
+  _Source Paper07_ Stays here
+       
+  Several elements found in this literature review connect the characteristics of construction projects to the characteristics of a dynamic system.
+  As shown in Figure 4, the interconnectivity is explicit between project stages, in the event that subsequent phases rely on the accomplishment and performance of previous ones.
+  This dependent connection remains valid for divided n-substages or n-activities and also applies to the proposed framework.
+  The dependence of processes and/or activities is well documented in the literature and well known by practitioners.
+  An activity or stage may impair or favour a successive action depending on the level of correlation and dependence.
+  The interdependence of activities forms a conduit to the propagation of unsure events. Potential risks captured through the entire project life may impact project execution whenever not properly treated, resulting in project deviations.
+  This sequence of events is represented in the system by the flow of uncertainty to risk and the occurrence of risk events, through risk management filtering actions—avoidance, acceptance, sharing, transference, mitigation, motivation—and, finally, to variability.
+  This flow resembles an intrinsic characteristic of systems in the presence of disturbance or noise.
+
+  Control systems may transmit unfiltered noise across connections affecting vulnerable components and causing disturbances or unpredicted behaviour.
+  Although the level of influence in this flow of sequential, parallel or overlapping relationships in the process or activity network have not been investigated at this point, understanding how risk transforms into variability, and especially how variability affects networked activities, propitiates an opportunity to develop methods aimed at avoiding and mitigating (filtering) the propagation of risk (noise). Regarding risk materialization in variability, different outcomes build on how concentrated or distributed the risk impact was.
+  This scenario requires a function capable of scale variation and energy conservation (impact) when calculating the functional energy.
+  The wavelet network evolved from the Fourier transformation: “wavelet network is a type of building block for approximation of unknown functions based on the concept of the multi-resolution approximation.
+  The building block is formed by shifting and dilating the basis functions, the mother wavelet and father wavelet” [97].
+  A wavelet network may be used as universal function approximator (“a universal function approximator is a system that, given a set of predictor variables, can output an accurate estimate of some predicted variable” [97]) to estimate unknown nonlinear functions and to attain a required control performance.
+  A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
+  Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
 
 
 - [ ] Figures
@@ -168,12 +250,6 @@ _Source Paper07_ Stays here
 \end{figure}
 #+END_LATEX
 
-(Figure)
-#+CAPTION: A typical feedback loop control
-#+NAME: fig_a_typical_feedback_loop_control
-#+ATTR_HTML: :height 300
-#+ATTR_LATEX: :height 150
-[[./Figures/A_typical_feedback_loop_control.eps]]
 
 (Figure)
 #+CAPTION:Construction project-driven production system
@@ -513,7 +589,7 @@ parencite:Antunes2018a
 |   | Plan                                  |       |         |      1 |       1 |
 |   | Introduction                          |   500 |         |      4 |         |
 |   | Lean principles and production theory |  1500 |         |      5 |         |
-|   | Productivity Function                 |  2000 |         |      5 |       3 |
+|   | Productivity Function                 |  2000 |         |      5 |       5   |
 |   | Applicability                         |  1500 |         |      5 |         |
 |   | Discussion                            |  1000 |         |      5 |         |
 |   | Conclusion                            |   500 |         |      5 |         |
