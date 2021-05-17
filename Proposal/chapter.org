@@ -120,9 +120,9 @@ Finally, the chapter presents automated methods of data collection that feed the
   For instance, platerboads installation an drilling for the ouputs aforementioned.
   The Figure ref::fig_simple_system shows a single output and single input (SISO) for simplicty purposes.
   A system can be composed by multiple inputs to single or multiple outputs (MISO and MIMO respectively) and also single input to multiple outputs.
-  Regardless of the system composition in terms of how many inputs and outputs or what the input(s), output(s) and process are; there are a few restrictions to a system.
-  There is no output on lack of input.
-  There is no output without a process.
+  Regardless of the system composition in terms of how many inputs and outputs or what the input(s), output(s) and process are; there are a few restrictions to a system:
+  - There is no output on lack of input.
+  - There is no output without a process.
   
   
 #+BEGIN_SRC ditaa :file Figures/system_basic.png :cmdline -rS
@@ -156,6 +156,17 @@ Finally, the chapter presents automated methods of data collection that feed the
   /If the current ouput state is no the one desired, the input will change to match achieve the output goal./
   /The process improvement itself will alter the process as such the system will have increased the output using a constany input./
   /In terms of system, it will look like figure ref::closed_loop.
+  The `plan' is desired ouput.
+  `Check' is a comparison between the `plan' and the current output.
+  The result is the measured `deviation'.
+  Based on the `deviation' actions must be implemented.
+  For example, the plan establish that an output of 50 square meters should be installed an hour to complete the job on time.
+  Two workers are initially assigned to the job (input).
+  If the two workers (input) are capable to install (process). 
+  That creates an action which for this example is to increase workers to increase output.
+  On the other hand, if the workers produce a higher output than the plan, the deviation will work on the other way: decrease the number of workers to reduce output thus matching the plan.
+  
+
 
 (Figure)
 
