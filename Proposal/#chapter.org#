@@ -109,7 +109,7 @@ Finally, the chapter presents automated methods of data collection that feed the
   Hence, unless a construction process fulfills the stability and steady-state conditions, the manufacturing model and, consequently, the laws do not accurately represent production in construction.
   Alternatively, variants of manufacturing laws must be developed to production in project-based systems that not fulfill those requirements.
   =In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.=
-    The input is applied to a process to produce an output.
+  The input is applied to a process to produce an output.
   These three elements constitute a input/output system (Figure ref::fig_simple_system);  which we will refer simply as system from now on.
   Input are, for instance, materials, tools, equipment, labor, management, time, and weather conditions *(Blanchard and Fabrycky, 2011)*.
   *``Some of these factors, such as material, also become a part of the output product, while others are needed for control purposes (e.g., management).
