@@ -103,13 +103,7 @@ Finally, the chapter presents automated methods of data collection that feed the
   Using the system approach, Hopp and Spearman elaborated significant laws to queue systems and the general production in manufacturing.
   The conservation of material and capacity laws (Hopp and Spearman, 1996) are particularly attractive, not only according to their importance, but also because they explicitly state one or more system restrictions.
 
-- [ ] Limitations of Manufacturing system view to construction
-  These laws place reliance on stable systems, with long runs and at steady-state conditions.
-  However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (citep:Antunes2015 Antunes and Gonzalez, 2015).
-  Hence, unless a construction process fulfills the stability and steady-state conditions, the manufacturing model and, consequently, the laws do not accurately represent production in construction.
-  Alternatively, variants of manufacturing laws must be developed to production in project-based systems that not fulfill those requirements.
-  =In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.=
-    The input is applied to a process to produce an output.
+  In this system view, an input is applied to a process to produce an output.
   These three elements constitute a input/output system (Figure ref::fig_simple_system);  which we will refer simply as system from now on.
   Input are, for instance, materials, tools, equipment, labor, management, time, and weather conditions *(Blanchard and Fabrycky, 2011)*.
   *``Some of these factors, such as material, also become a part of the output product, while others are needed for control purposes (e.g., management).
@@ -141,7 +135,6 @@ Finally, the chapter presents automated methods of data collection that feed the
 [[file:Figures/system_basic.png]]
 
 
-
 - [ ] Project as cycle
   Most projects follow a cycle similar to plan-do-check-act (PDCA), also originally developed for manufacturing operations.
   PDCA applies to continuous process improvement (Rumane and Badiru, 2013, p.53) and consists of a four-stages infinite loop.
@@ -165,10 +158,7 @@ Finally, the chapter presents automated methods of data collection that feed the
   If the two workers (input) are capable to install (process). 
   That creates an action which for this example is to increase workers to increase output.
   On the other hand, if the workers produce a higher output than the plan, the deviation will work on the other way: decrease the number of workers to reduce output thus matching the plan.
-  
-
-
-(Figure)
+  This configuration is a Closed-loop Control System or feedback control system in control theory.
 
 
 #+BEGIN_SRC ditaa :file Figures/system_feedback_loop.png :cmdline -rS
@@ -178,17 +168,17 @@ Finally, the chapter presents automated methods of data collection that feed the
 	      |       |           |        |       |         |    |
 	      +---+---+           +--------+       +---------+    |
 		  |                                               |
-                  +----------------------<------------------------+
+                  +------------------------+----------------------+
 #+END_SRC
-
-#+RESULTS:
-[[file:Figures/system_feedback_loop.png]]
-
 
 #+CAPTION: Feedback Loop (PDCA)
 #+NAME: fig_feedback_loop
 # #+ATTR_HTML: :height 300
 # #+ATTR_LATEX: :height 150 
+#+RESULTS:
+[[file:Figures/system_feedback_loop.png]]
+
+
 
 
 
@@ -204,7 +194,7 @@ Finally, the chapter presents automated methods of data collection that feed the
   _Source Paper07_ Stays here
        
   Several elements found in this literature review connect the characteristics of construction projects to the characteristics of a dynamic system.
-  As shown in Figure 4, the interconnectivity is explicit between project stages, in the event that subsequent phases rely on the accomplishment and performance of previous ones.
+  As shown in Figure ref:fig_construction_project-driven_production_system, the interconnectivity is explicit between project stages, in the event that subsequent phases rely on the accomplishment and performance of previous ones.
   This dependent connection remains valid for divided n-substages or n-activities and also applies to the proposed framework.
   The dependence of processes and/or activities is well documented in the literature and well known by practitioners.
   An activity or stage may impair or favour a successive action depending on the level of correlation and dependence.
@@ -214,16 +204,9 @@ Finally, the chapter presents automated methods of data collection that feed the
 
   Control systems may transmit unfiltered noise across connections affecting vulnerable components and causing disturbances or unpredicted behaviour.
   Although the level of influence in this flow of sequential, parallel or overlapping relationships in the process or activity network have not been investigated at this point, understanding how risk transforms into variability, and especially how variability affects networked activities, propitiates an opportunity to develop methods aimed at avoiding and mitigating (filtering) the propagation of risk (noise). Regarding risk materialization in variability, different outcomes build on how concentrated or distributed the risk impact was.
-  This scenario requires a function capable of scale variation and energy conservation (impact) when calculating the functional energy.
-  The wavelet network evolved from the Fourier transformation: “wavelet network is a type of building block for approximation of unknown functions based on the concept of the multi-resolution approximation.
-  The building block is formed by shifting and dilating the basis functions, the mother wavelet and father wavelet” [97].
-  A wavelet network may be used as universal function approximator (“a universal function approximator is a system that, given a set of predictor variables, can output an accurate estimate of some predicted variable” [97]) to estimate unknown nonlinear functions and to attain a required control performance.
-  A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
-  Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
+  Operating on possibly the same conditions of linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models---control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
 
 
-
-(Figure)
 #+CAPTION:Construction project-driven production system
 #+NAME: fig_construction_project-driven_production_system
 #+ATTR_HTML: :height 300
@@ -231,12 +214,21 @@ Finally, the chapter presents automated methods of data collection that feed the
 [[./Figures/Construction_project_driven_production_system.eps]]
 
 
-The simplest model of construction processes considers a closed conversion process where all factors affecting the work are steady state \cite{Drewin1982}.
+The simplest model of construction processes considers a closed conversion process where all factors affecting the work are steady state citep:Drewin1982.
 In this model, the relationship between output and input, i.e., productivity, is given by a constant which is unaffected by external factors.
 This constant can be determined by, for instance, the linear curve fitting or the ratio of the sum of outputs to the sum of inputs.
-The linear scheduling method (LSM) \cite{Harmelink1998,Su2016} and line-of-balance (LOB) \cite{Lumsden1968,Su2016,ZolfagharDolabi2014} are examples of scheduling models for repetitive processes based on the steady state model.
-However, ``because of the steady state nature of this model, the system more closely represents industrial production processes than construction processes \cite{Thomas1990}.''
-Short production runs \cite{Bashford2005}, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships \cite{Bertelsen2003,Lutz1993} frequently prevent repetitive production processes in construction to reach steady state \cite{Antunes2015a,Walsh2007}.
+The linear scheduling method (LSM) (citep:Harmelink1998,Su2016) and line-of-balance (LOB) (citep:Lumsden1968,Su2016,ZolfagharDolabi2014) are examples of scheduling models for repetitive processes based on the steady state model.
+However, ``because of the steady state nature of this model, the system more closely represents industrial production processes than construction processes (citep:Thomas1990).''
+Short production runs citep:Bashford2005, high levels of output and input variability \cite{Gonzalez2009}, and nonlinear input-output relationships citep:Bertelsen2003,Lutz1993 frequently prevent repetitive production processes in construction to reach steady state citep:Antunes2015a,Walsh2007.
+
+
+- [ ] Limitations of Manufacturing system view to construction
+  These laws place reliance on stable systems, with long runs and at steady-state conditions.
+  However, production in project-based systems, such as construction, involves a mix of processes in steady- and unsteady-state, short and long production runs, and different learning curves (citep:Antunes2015)
+  Hence, unless a construction process fulfills the stability and steady-state conditions, the manufacturing model and, consequently, the laws do not accurately represent production in construction.
+  Alternatively, variants of manufacturing laws must be developed to production in project-based systems that not fulfill those requirements.
+  =In this scenario of variety, it is crucial distinguishing between project-based systems conditions, comprehending process dynamics and its behavior.=
+
 
 ** Mathematical foundation of the Productivity Function
 

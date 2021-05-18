@@ -3,13 +3,13 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "-*-coding:utf-8-*-") ("fontenc" "T1") ("ulem" "normalem") ("geometry" "margin=2cm" "a4paper" "bindingoffset=0.2in" "left=1in" "right=1in" "top=1in" "bottom=1in" "footskip=.25in") ("biblatex" "backend=biber" "style=apa")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -32,58 +32,57 @@
     "biblatex"
     "tikz")
    (LaTeX-add-labels
-    "sec:orge63547b"
-    "sec:orgee81c1d"
-    "sec:org3c7da2b"
-    "sec:org4d17145"
-    "sec:org73fc404"
-    "sec:org2c6d23e"
-    "sec:orgc7ed887"
-    "sec:org644cc3c"
-    "fig:orgdfde06f"
-    "fig:orgfc7587d"
-    "fig:Feedback loop"
-    "fig:orgc6c5dd9"
-    "sec:org7a5d72b"
-    "sec:orgda84b97"
+    "sec:orgf136e7d"
+    "sec:org5d8087a"
+    "sec:org386c9eb"
+    "sec:orgabaf29d"
+    "sec:org37fc69f"
+    "sec:org3cc2ad2"
+    "sec:org9b92394"
+    "sec:org27a30a5"
+    "fig:org54dbf0a"
+    "fig:orgb9c107f"
+    "fig:orgd6c07c3"
+    "sec:org18524d1"
+    "sec:org3ac3270"
     "eq:steady state"
     "eq:Step function in time domain P7"
-    "sec:orgfa98ff3"
-    "sec:orgc13c283"
-    "sec:orgaa9a7a9"
-    "fig:orgddb7e13"
+    "sec:orgfcdf303"
+    "sec:orgc216f6d"
+    "sec:org8d03f52"
+    "fig:org6e3c837"
     "fig:Transient"
     "eq:Productivity_Function"
-    "sec:orgac1634c"
-    "sec:org1335c55"
-    "sec:org42d2dc4"
-    "sec:org6ea47ee"
+    "sec:org2f342ef"
+    "sec:org1932ea8"
+    "sec:orgcb99b0e"
+    "sec:orgf4bd705"
     "eq:FinalValue"
     "eq:FinalValue2"
     "eq:Capacity"
-    "sec:orgbd58711"
-    "sec:org2d441d2"
-    "sec:org6ae20c3"
-    "sec:orgf0ce64c"
+    "sec:org5a294e0"
+    "sec:orgc7ae3d3"
+    "sec:org0ca4641"
+    "sec:org20d32d9"
     "eq:CycleTime"
     "eq:ArtifactJ"
     "eq:Artifact1"
     "eq:Artifact2"
-    "sec:org9d82ec6"
-    "sec:orgb3fba70"
-    "sec:orgac6012d"
-    "sec:orgfd06288"
-    "sec:orgd938d2e"
-    "sec:org344a268"
-    "sec:orgfd57132"
-    "sec:orgc2239ea"
-    "sec:orge763302"
-    "sec:org9ed59c8"
-    "sec:org38807dc"
-    "sec:org810dfef"
-    "sec:orgfc9082f"
-    "sec:orge6c2cc5"
-    "sec:orgaa234e1")
+    "sec:org848e7c4"
+    "sec:orgde54c2d"
+    "sec:org72993cf"
+    "sec:org5eda0d0"
+    "sec:org0fad43c"
+    "sec:orgaf1abbf"
+    "sec:org6d752e7"
+    "sec:org5187d66"
+    "sec:org438f3c8"
+    "sec:org72b2969"
+    "sec:org63016a1"
+    "sec:org02253ac"
+    "sec:orgd245c13"
+    "sec:orgd93b1ad"
+    "sec:org438e498")
    (LaTeX-add-bibliographies
     "/Users/ricmagno/Documents/References/library"))
  :latex)
