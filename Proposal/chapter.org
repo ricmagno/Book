@@ -193,9 +193,6 @@ Finally, the chapter presents automated methods of data collection that feed the
 
 
 
-
-
-
 #+CAPTION: A typical feedback loop control
 #+NAME: fig_a_typical_feedback_loop_control
 #+ATTR_HTML: :height 300
@@ -224,43 +221,6 @@ Finally, the chapter presents automated methods of data collection that feed the
   A new concept in the control area, wavelets have been successfully used in several applications, such as physics, signal processing and statistics, where small complicated details matter [98].
   Operating on possibly the same conditions of wave theory—linear/nonlinear, deterministic/stochastic, time-domain/frequency domain, direct/inverse problems, discrete/continuous models [99]—control theory may create a proxy theory to explain the effects of variability in construction projects by extending the elements of the dynamic systems.
 
-
-- [ ] Figures
-       #+CAPTION: Construction project-driven production system
-       #+NAME: fig_construction_project-driven_production_system_simple
-       #+ATTR_HTML: :height 300
-       #+ATTR_LATEX: :height 150
-       #+BEGIN_LATEX:
-\begin{figure}
-  \centering
-  \begin{tikzpicture}[>=latex',every node/.append style=
-      {font=\scriptsize},node distance=5mm]
-
-  \node [input, name=input] {};
-  \node [sum, right=12mm of input] (control_sum) {};
-  % \node [block, right=12mm of control_sum, rounded corners] (K) {Controller \\ $K$};
-  \node [block, right=3cm of control_sum, rounded corners] (G) {System \\ $G$};
-  \node [dot, right=12mm of G] (snodo1) {};
-  \node [output, right=of snodo1] (output) {};
-
-  \begin{scope}[auto]
-    \draw [->] (input) -- (control_sum)
-    node[very near start] {$r(t)$}
-    node[very near start,swap] {Reference}
-    node[very near end] {$+$};
-    % \draw [->] (control_sum) -- node {$e(t)$} node[swap] {Error} (K);
-    \draw [->] (control_sum) -- node {$u(t)$} node[swap] {Input} (G);
-    \draw [-] (G) -- node {$y(t)$} node[swap] {Output} (snodo1);
-    \draw [->] (snodo1) -- (output);
-    \draw [->] (snodo1) |- +(0,-1.5) -| (control_sum)
-    node[near start]{}
-    node[near start, swap]{}
-    node[very near end] {$-$};
-  \end{scope}
-  \end{tikzpicture}
-  \caption{Feedback loop}\label{fig:Feedback loop}
-\end{figure}
-#+END_LATEX
 
 
 (Figure)
