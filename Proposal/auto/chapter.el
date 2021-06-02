@@ -3,13 +3,13 @@
  (lambda ()
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "-*-coding:utf-8-*-") ("fontenc" "T1") ("ulem" "normalem") ("geometry" "margin=2cm" "a4paper" "bindingoffset=0.2in" "left=1in" "right=1in" "top=1in" "bottom=1in" "footskip=.25in") ("biblatex" "backend=biber" "style=apa")))
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
-   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "href")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
@@ -32,57 +32,74 @@
     "biblatex"
     "tikz")
    (LaTeX-add-labels
-    "sec:orgf136e7d"
-    "sec:org5d8087a"
-    "sec:org386c9eb"
-    "sec:orgabaf29d"
-    "sec:org37fc69f"
-    "sec:org3cc2ad2"
-    "sec:org9b92394"
-    "sec:org27a30a5"
-    "fig:org54dbf0a"
-    "fig:orgb9c107f"
-    "fig:orgd6c07c3"
-    "sec:org18524d1"
-    "sec:org3ac3270"
+    "sec:org1b4ca03"
+    "sec:org04fe22b"
+    "sec:org0fb8799"
+    "sec:org468f022"
+    "sec:org41773f3"
+    "sec:org6cc1835"
+    "fig:Schematic view of a flow of items through a queuing system"
+    "eq:Little's Law"
+    "eq:Little's Law average"
+    "fig:Number of items in a queuing system versus time"
+    "eq:Little's Law for operation management"
+    "eq:Critical WIP"
+    "eq:Best cycle through"
+    "eq:Best throughput"
+    "eq:Worst-case performance cycle through"
+    "eq:Worst-case performance throughput"
+    "eq:Practical worst-case performance cycle through"
+    "fig:Cycle time versus WIP"
+    "fig:throughput versus WIP worst- and best-case performance scenario"
+    "eq:Law (Labor Capacity)"
+    "tb:Classes of variability"
+    "fig:Cycle time versus parallel batch size in batch production"
+    "sec:org6624b08"
+    "sec:orgca08c53"
+    "sec:org64fda99"
+    "fig:org1c63e49"
+    "fig:org1afb01f"
+    "fig:org5b12bf7"
+    "sec:org0798767"
+    "sec:orgc98dfc6"
     "eq:steady state"
     "eq:Step function in time domain P7"
-    "sec:orgfcdf303"
-    "sec:orgc216f6d"
-    "sec:org8d03f52"
-    "fig:org6e3c837"
+    "sec:org201216e"
+    "sec:org322d761"
+    "sec:orgb1d8005"
+    "fig:orgd47b4b4"
     "fig:Transient"
     "eq:Productivity_Function"
-    "sec:org2f342ef"
-    "sec:org1932ea8"
-    "sec:orgcb99b0e"
-    "sec:orgf4bd705"
+    "sec:orgab16cf4"
+    "sec:org05de7c7"
+    "sec:org71f2ef6"
+    "sec:org60c770c"
     "eq:FinalValue"
     "eq:FinalValue2"
     "eq:Capacity"
-    "sec:org5a294e0"
-    "sec:orgc7ae3d3"
-    "sec:org0ca4641"
-    "sec:org20d32d9"
+    "sec:org4092c38"
+    "sec:org24d9c40"
+    "sec:org5277e34"
+    "sec:orgcdc4dbe"
     "eq:CycleTime"
     "eq:ArtifactJ"
     "eq:Artifact1"
     "eq:Artifact2"
-    "sec:org848e7c4"
-    "sec:orgde54c2d"
-    "sec:org72993cf"
-    "sec:org5eda0d0"
-    "sec:org0fad43c"
-    "sec:orgaf1abbf"
-    "sec:org6d752e7"
-    "sec:org5187d66"
-    "sec:org438f3c8"
-    "sec:org72b2969"
-    "sec:org63016a1"
-    "sec:org02253ac"
-    "sec:orgd245c13"
-    "sec:orgd93b1ad"
-    "sec:org438e498")
+    "sec:org1263daa"
+    "sec:org2aac38b"
+    "sec:org13dd2d2"
+    "sec:org9fc4530"
+    "sec:orgba557ee"
+    "sec:org3a7685a"
+    "sec:orgd0d7821"
+    "sec:org4d87746"
+    "sec:orgec5a1a9"
+    "sec:orgcd72544"
+    "sec:org48dca9b"
+    "sec:org80d7dac"
+    "sec:orgc6dc74e"
+    "sec:orga1d67dc"
+    "sec:org2eab439")
    (LaTeX-add-bibliographies
     "/Users/ricmagno/Documents/References/library"))
  :latex)
