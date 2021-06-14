@@ -1,4 +1,4 @@
-% Created 2021-06-08 Tue 19:20
+% Created 2021-06-14 Mon 18:59
 % Intended LaTeX compiler: pdflatex
 \documentclass{article}
 \usepackage[utf8]{inputenc}
@@ -35,10 +35,13 @@
 \maketitle
 \tableofcontents
 
+1;95;0c:PROPERTIES:
+:ID:       170029D7-DE41-4BDB-B78E-54BCEA47E375
+:END:
 
 
 \section{Guidelines}
-\label{sec:org6a654e0}
+\label{sec:org4c0c151}
 \begin{verbatim}
 '(tex-count-word)
 \end{verbatim}
@@ -48,7 +51,7 @@
 \end{itemize}
 
 \section{Abstract}
-\label{sec:org47e4e16}
+\label{sec:org4f4f574}
 The building construction industry faces challenges, such as increasing project complexity, and larger scope requirements but shorter deadlines. 
 Additionally, the industry relies on practices based on intuition and experience, overlooking the dynamics of its production system. 
 These approaches underestimate the influence of process repetitiveness, the size of the production run, the transient state (setup times), the variation of learning curves, and the conservation of processes properties. 
@@ -61,14 +64,14 @@ Productivity Function is applied in feedback loop control yielding a robust appr
 Finally, the chapter presents automated methods of data collection that feed the Productivity Function models, which are the foundation of the production theory and support the decision-making process on Lean Construction 4.0. 
 
 \section{Introduction}
-\label{sec:orgfdb4f0b}
+\label{sec:orgb6dd162}
 Despite the name of the title of this chapter, you will not find equations here.
 Not because they do not exist, but because we believe that, at least for now, it is more important to understand what these equations represent than how they come to be.
 You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
 \section{Lean principles and production theory [0/2]}
-\label{sec:orgde02d59}
+\label{sec:org649767d}
 \subsection{Production in manufacturing (Factory Physics)}
-\label{sec:org311b717}
+\label{sec:org43f60e9}
 The manufacturing industry is knowable of its production.
 From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
 Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -80,9 +83,9 @@ Inputs may not reflecet the full range of requirementes to create the output but
 The process can be determined on physical knwon equations or most oftern determined by evaluating the relationship betwen input and output.
 The mathematical representation of this relantionship is main difference between manufacturing and construction.
 
+\subsubsection{Throughput \label{throughput}}
+\label{sec:orgdcdc1b9}
 
-\subsubsection{Throughput}
-\label{sec:orgace4721}
 Throughput, TH, is the number of production units sold per unit of time \citep{Hopp2001}.
 However, throughput in production systems, THs, has a slightly different meaning.
 THs is the number of units produced per unit of time or the production system throughput rate.
@@ -91,8 +94,8 @@ The value of TH is presented as the average value of the production system throu
 THs does not generate revenue; it creates an inventory.
 THs is utilized to measure the performance of an individual production process and or routings in a network of transformations processes.
 
-\subsubsection{Capacity}
-\label{sec:org1a088f4}
+\subsubsection{Capacity \label{capacity}}
+\label{sec:org172849e}
 
 Capacity is the maximum number of units that a production system releases per unit of time \citep{Hopp2001}.
 Capacity is equivalent to the maximum throughput.
@@ -100,53 +103,28 @@ Maintaining a production system at capacity is complex.
 Because most production systems are unstable at capacity, releasing work at unsteady rates.
 That disturbs the flow and process THs, consequently producing irregular intermediate inventories between these processes.
 
-\subsubsection{Raw material inventory}
-\label{sec:orgb9b6822}
-
-The stock of material, which will be used in the transformation process, is the raw material inventory (RMI).
-The raw material inventory may stand for raw material, such as nails and screws, or sub-assemblies (a car dashboard) or product that is part of a bigger product; for example, an engine that will be assembled in a car \citep{Hopp2001}.\%\citep[p.217]{Hopp2001}
-
-\subsubsection{Finished goods inventory}
-\label{sec:org7604421}
-
-The stock at the end of the production process chain is the finished goods inventory (FGI).
-Products in this inventory do not require further processing; they are ready for sale \citep{Hopp2001}.\%\citep[p.217]{Hopp2001}
-
 \subsubsection{Work-in-process}
-\label{sec:org1d435c6}
+\label{sec:org12eb324}
 
 Work-in-process, WIP, consists of the intermediate inventories between transformation processes.
 WIP excludes the inventories at the extremes of the production chain, i.e., the first raw material inventory and the finished goods inventory \citep{Hopp2001}.
 
-\subsubsection{Inventory turns}
-\label{sec:org5529a8a}
-
-A measure of the number of times finished goods inventory is sold and replaced during the year \citep{Marshall2014}.
-Inventory turns connect the throughput of the production system to sales.
-THs is responsible for creating and replacing the inventory.
-Sales are the output of FGI$\backslash$@.
-In this case, it is necessary that all variables involved have the same unit of measurement.
-FGI is primarily an accounting variable, usually measured in same currency units, such as dollars.
-Consequently,
-THs must also be measured in the currency units, rather than a number of units produced \citep{Hopp2001}.
-
-\subsubsection{Cycle time}
-\label{sec:org29bf1ed}
+\subsubsection{Cycle time \label{cycle_time}}
+\label{sec:org89a3d66}
 
 The cycle time, CT, is the time spent to produce a good, i.e., complete a production cycle.
-Cycle time measures the time a product or services takes to be produced \citep{Hopp2001}.
+Cycle time measures the time a product or a service takes to be completed \citep{Hopp2001}.
 Alternatively, CT is also utilized to measure the performance of an individual transformation process or routing in a network of transformations processes.
-This feature is useful when a production process needs boundaries.
-For instance, the CT of automotive assembling line starts when the chassis is ready.
-It does not consider the CT of the engine production or the extraction of iron ore \citep{Hopp2001}.
+
 In production, the \(\mbox{CT}_1\) is the time taken to manufacture the first product.
+It is also know at Lead time (\ref{lead_time}).
 However, \(\mbox{CT}_2\) is the time between the release of the first product and the second.
 \(\mbox{CT}_2\) should be considerably smaller than \(\mbox{CT}_1\) because at the time the first product is released, the next product should be queued at the last transformation product.
 Consequently, the time necessary for releasing the next product is equivalent to the processing time to finish the next product.
 In this case, \(\mbox{CT}_2\) is equal the CT of the last transformation process.
 
-\subsubsection{Lead time}
-\label{sec:org7b0071a}
+\subsubsection{Lead time \label{lead_time}}
+\label{sec:org00ccd17}
 
 Lead time, LT, is the time assigned for production between the start and end of the transformation process chain \citep{Hopp2001}.
 The start and end of lead time are at the same points those in of cycle time.
@@ -154,23 +132,19 @@ The difference is that lead time is allotted and cycle time is measured.
 Lead time is a management constant.
 During normal operations, the cycle time is less or equal than the lead time.
 
-\subsubsection{Utilization}
-\label{sec:orge34aeaa}
+\subsubsection{Utilization \label{utilization}}
+\label{sec:orgaf38d7e}
 
 Utilization is the ratio of the actual output to the full potential output of a transformation process expressed as a percentage.
-The actual output and the full potential may be expressed in currency units, unit amount of production or time, whichever provides better management information \citep[pp.57-58]{Kumar2009}.
+The actual output and the full potential may be expressed in currency units, unit amount of production or time, whichever provides better management information \citep{Kumar2009}.
 The difference between actual and potential output (measured by the utilization ratio) can be used to display potential problems in the process, such as machine failure, job waiting, or lack of parts.
 As mentioned above, a few processes operate at capacity due to stability issues.
-As a result, utilization is also rarely close to 100$\backslash$%.
+As a result, utilization is also rarely close to 100\%.
 If utilization is high, the process is operating under capacity.
 Conversely, low utilizations indicate an excess of capacity \citep{Hopp2001}.
 
-\%\subsection{Relationships}
-
-\%There are relationships and between some of the lower level variables management and laws.
-
-\subsubsection{Law (Little's Law)}
-\label{sec:org405bd80}
+\subsubsection{Law (Little's Law) \label{littles_law}}
+\label{sec:org3b8778d}
 
 Named after John D. C. Little \citep{Little1961}, the Little's law relates three of main lower level variables management in a queuing system.
 A queuing system consists of a flow of discrete items arriving at a constant pace, to a stable system that services and releases these items for further processing.
@@ -181,54 +155,24 @@ Figure\textasciitilde{}\ref{fig:Schematic view of a flow of items through a queu
   \centering
   \includegraphics[width=1\linewidth]{Figures/LiteratureReview/Schematic_view_of_a_flow_of_items_through_a_queuing_system}
   \caption{Schematic view of a flow of items through a queuing system}\label{fig:Schematic view of a flow of items through a queuing system}
-  \source{Adapted from \citet*[p. 82]{Little2008}}
+  \source{Adapted from citep:Little2008}
 \end{figure}
 
-Little's Law states that, under steady state conditions, the average number of items in a queuing system equals the average rate at which items arrive multiplied by the average time that an item spends in the system \citep[p. 82]{Little2008}.
-The Little's law is originally expressed as \(L=\lambda W\), where:
-
-\begin{itemize}
-    \item $L$ is the expected number of units in the system;
-    \item $W$ is expected time spent by a unit in the system, and;
-    \item $\lambda^{-1}$ is the expected time between two consecutive arrivals to the system.
-\end{itemize}
+Little's Law states that, under steady state conditions, the average number of items in a queuing system equals the average rate at which items arrive multiplied by the average time that an item spends in the system \citep{Little2008}.
 
 Furthermore, there is not a unique solution for the formula because there are no constants involved.
 It is possible to obtain a value of \(L\) with infinite combinations of \(\lambda\) and \(W\).
 Another important remark about Little's law is the assumption of a stationary arrival process.
 A more precise realization of a particular queuing system is possible for Little's Law by interpreting the number of items arriving and departing in the system, as shown in Figure\textasciitilde{}\ref{fig:Number of items in a queuing system versus time}, where:
 
-\begin{itemize}
-    \item $n_a(t)$ is the number of items arriving in the queuing system at time $t$;
-    \item $n_d(t)$ is the number of items departing in the queuing system at time $t$;
-    \item $A(T)=\int_0^T (n_a(t)-n_d(t))dt$ is the area under the curve $n_a(t)$ and over the $n_d(t)$ at the period $T$;
-    \item $T$ is a long period of time;
-    \item $N(T)=\int_0^{T}n_a(t)$ is the number of arrivals in the time period $T$;
-    \item $\lambda(t)=N(T)/T$ is the arrival rate during time period $T$;
-    \item $L(T)=A(T)/T$ is the average queue length during time period $T$;
-    \item $W(T)=A(T)/N(T)$ is the average waiting time in the system per arrival during $T$;
-\end{itemize}
-\nobreak the manipulation of the last three equations yields in the Little's Law.
-
-\begin{equation}\label{eq:Little's Law}
-    L(T) = \lambda (T) \times W(T)
-\end{equation}
-
 To obtain \(L=\lambda \times W(T)\), the system must be at steady state, i.e., \(T \rightarrow \infty\).
 Therefore:
-\begin{equation}
-    \lim_{T\rightarrow\infty} L(T) = \lim_{T\rightarrow\infty} \lambda(T) \times W(T) \\
-\end{equation}
-
-\begin{equation}\label{eq:Little's Law average}
-    L=\lambda \times W
-\end{equation}
 
 \begin{figure}[H]
   \centering
   \includegraphics{Figures/LiteratureReview/Number_of_items_in_a_queuing_system_versus_time}
   \caption{Number of items in a queuing system versus time}\label{fig:Number of items in a queuing system versus time}
-  \source{Adapted from \citet*{Little1961}}
+  \source{Adapted from citep:Little1961}
 \end{figure}
 
 Over the years, the original Little's law equation \citep{Little1961} evolved to a more generic form comprising operations management \citep{Hopp2001}.
@@ -245,43 +189,26 @@ The difference between Equation\textasciitilde{}\ref{eq:Little's Law} and Equati
 Consequently, the Equation\textasciitilde{}\ref{eq:Little's Law for operation management}, which is based on an average behavior of variables over a very long period, is likely to produce an imprecise approximation.
 However, to describe most relations of production in manufacturing the approximation described in Equation\textasciitilde{}\ref{eq:Little's Law for operation management} is sufficiently accurate.
 
-\subsubsection{Parameters of lower level variables management}
-\label{sec:org370e355}
-
-A parameter is a `subsidiary' (\(\pi\alpha \rho\acute{\alpha}\)) `measure' (\$\(\mu\) \textasciiacute{}\{\(\varepsilon\)\}\(\tau \rho\) o \(\nu\) \$), according to its Greek origin \citep{LSJcontributors2013}.
-Likewise, lower level variables constitute higher level objectives; auxiliary measurements support lower level variables.
-Also, these parameters support manager's decision-making on improving production performance.
 
 \subsubsection{Bottleneck rate}
-\label{sec:org305f0ef}
-
-\% TODO 2.14.12 is too brief. It deserves similar level of considerations/explanation as other sub-headings under 2.14 2.14.12 is Capacity
-
-
-In a production line, the bottleneck rate, \(r_b\), of this line is given by the throughput of the process with highest long-term utilization, i.e., lowest effective rate \citep[p.218]{Hopp2001}.
+\label{sec:orgb308b20}
+In a production line, the bottleneck rate, \(r_b\), of this line is given by the throughput of the process with highest long-term utilization, i.e., lowest effective rate \citep{Hopp2001}.
 In general terms, the bottleneck rate points out the process that is working closest to its capacity.
 Accordingly, the bottleneck process restricts the throughput of the production line.
 
-\subsubsection{Raw process time}
-\label{sec:org81f62e8}
-
-The raw process time of a production line, \(T_0\), is the sum of the long-term average processing time of all transformation processes on that line \citep{Hopp2001}.
-Raw process time starts when the material is removed from the raw material inventory to enter the first transformation process and ends when the last transformation process delivers the product to the finished goods inventory.
-Hence, the finished good takes \(T_0\) to go from the initial raw material inventory across all required transformation processes to the finished goods inventory.
-
 \subsubsection{Critical WIP}
-\label{sec:org1de449d}
+\label{sec:org3721c95}
 
-The critical WIP, \(W_0\), of a production line, is the value related to the maximum production capability \citep[p.219]{Hopp2001}.
+The critical WIP, \(W_0\), of a production line, is the value related to the maximum production capability \citep{Hopp2001}.
 At \(W_0\) the production line reaches its maximum throughput, \(\mbox{THs}_{\mbox{max}}\), restricted by \(r_b\), producing goods with minimum intervals, i.e., cycle time \(\mbox{CT}_0\) \citep{Martin1998}.
-Hence, according to Little's law, the critical WIP is given by Equation\textasciitilde{}\ref{eq:Critical WIP}.
+Hence, according to Little's law, the critical WIP is given by Equation\textasciitilde{}\ref{eq:Critical_WIP}.
 
-\begin{equation}\label{eq:Critical WIP}
+\begin{equation} label:eq:Critical_WIP
   \mbox{WIP}_0 = \mbox{CT}_0 \times \mbox{THs}_{\mbox{max}}
 \end{equation}
 
 \subsubsection{Law (best-case performance)}
-\label{sec:orga7cdda0}
+\label{sec:orgfdfc639}
 
 The best performance of a production line refers to the minimum interval to produce a good.
 It means a minimum \(\mbox{CT}_{\mbox{best}}\).
@@ -314,7 +241,7 @@ In consequence, once one variable is set the remaining variable can be manipulat
 In addition to the best-case, Little's Law produces two other cases: the worst-case, and the practical worst-case.
 
 \subsubsection{Law (worst-case performance)}
-\label{sec:orgeccb991}
+\label{sec:org76e3e65}
 
 The worst-case performance describes an opposite scenario to the best-case performance.
 In the worst-case, the production line operates at maximum cycle time and minimum throughput possible for bottleneck rate \(r_b\) and raw process time \(T_0\).
@@ -367,99 +294,23 @@ However, for a WIP greater than \(W_0\), production can be in the good region, a
   \source{Adapted from \citet*[p. 234]{Hopp2001}}
 \end{figure}
 
-\subsubsection{Law (labor capacity)}
-\label{sec:orgc7b364a}
+\subsubsection{Law (variability)}
+\label{sec:orge287067}
 
-The relations and laws introduced so far related primarily to production of continuous flow (IV) or connected lined flows (III), see Figure\textasciitilde{}\ref{fig:Characteristics of project stages}, where machines impose the main restriction of production.
-However, as the operation becomes more unconnected, as in disconnected line flow (II) and jumbled flow (I), the amplitude of work binds the production flow.
-For these cases, where the primary constraint is labor rather than machinery, labor sets the capacity of the transformation process.
-Creating a mathematical description of labor, due to workers being human, is far more complex than forming mathematical descriptions for machine-driven operations.
-Some assumptions must be set to enable algebraic definitions for labor \citep[pp.237-238]{Hopp2001}.
-The first assumption considers work continuity.
-Similar to machines, it is assumed workers perform the job continuously up to the point it is finished with no interruptions.
-There is no job interruption.
-The second assumption is that workers are perfectly cross-trained and are capable of performing various tasks at same pace.
-The third assumption is that there is no shortage of equipment and necessary machinery will always be available to workers.
-On this assumption, the cycle time is constant at \(T_0\), because there is no congestion caused by scarcity of equipment.
-The availability of workers controls the work releasing into the system.
-Consequently, if a worker releases a job every \(T_0\), considering first and second assumptions, \(n\) workers release the job at \(nT_0\).
-Finally, the maximum throughput of a production line with \(n\) cross-trained workers with same work rates is Equation\textasciitilde{}\ref{eq:Law (Labor Capacity)}.
-
-\begin{equation}
-    \mbox{TH}_{\mbox{max}}=\frac{n}{T_0}
-\label{eq:Law (Labor Capacity)}
-\end{equation}
-
-The Equation\textasciitilde{}\ref{eq:Law (Labor Capacity)}, Law (Labor Capacity) introduces labor as a constraint on the capacity of production lines.
-Nevertheless, the labor capacity applies to production processes in which all the workers act at on job at the time.
-It means that the law of labor capacity does not apply to multitasking systems.
-These systems require other approaches.
-
-\subsubsection{Variability in manufacturing}
-\label{sec:org659bdf4}
-
-The variability of a transformation process performs a significant role in the performance of transformation processes and consequently on the development of relations of objectives in a manufacturing organization.
-For instance, high levels of variability can invalidate the relation between the Little's law, Equation\textasciitilde{}\ref{eq:Little's Law}, and Little's law for operation management, Equation\textasciitilde{}\ref{eq:Little's Law for operation management}, since the average used in Little's law for operation management may produce an imprecise description when the variables oscillate.
-In general, the effects of variability in both project-driven systems and manufacturing are similar.
-The difference is in the amplitude of the variability.
-As the transformation process approximates to a continuous production lower levels of variability are observed.
-Conversely, as the transformation process approximates to a one-of-a-kind production, higher levels of variability are perceived.
-This behavior can be explained by grouping the sources of variability into external and internal sources.
-External, or exogenous, sources gather the elements outside of the transformation process that can affect the production.
-Outside means they are not an intrinsic part of the production, and consequently are out of the control of the process owner, as, for instance, with currency variation or client demand.
-Internal clusters together sources of variability within the transformation process and its resources.
-These sources can be managed and controlled by the process owner.
-Project-driven systems and manufacturing are continuously affected by both external, and internal sources of variability.
-The effect of external sources on production diminishes with the level of product customization.
-It means that a one-of-a-kind, i.e., fully customized, product is more vulnerable to external sources than is a commodity.
-Consequently, in commodity production the effects of variability are evident and mainly caused by internal aspects of production.
-In one-of-a-kind production, external sources of variability overlap internal sources, making it harder to identify causes and softens the result of mitigating actions towards the causes.
-For this reason, appropriate methods to handle variability are crucial.
-Furthermore, these methods should allow for further comprehension and ways to measure variability and its effects on transformation processes.
-
-In transformation processes of connected and continuous production, it is possible to measure the variability in the transformation processes using probabilistic methods.
-This kind of production is stable enough, i.e., at steady state, hence standard measures from statistics can quantify variability.
-The standard deviation, SD, and variance, SD\(^2\), often are sufficient to provide a quantification of absolute variability.
-In other cases, it is necessary to use a relative measurement.
-The coefficient of variation, CV, which is given by the standard deviation, SD, divided by the mean, \(\bar{y}\), provides this relative assessment of variability.
-The values of CV can be divided into classes from which typical situations can be deduced, as shown in Table\textasciitilde{}\ref{tb:Classes of variability}.
-Furthermore, the typical situations describe causes of variability, which, according to Hopp and Spearman \cite{Hopp2001}, are: natural variability, setups, random outages, operator availability and recycle.
-The natural variability refers to minor change in a process over time caused by variations in operators, machines, and raw material.
-Setups stand for planned interruptions necessary for adapting machinery to a different product.
-Random outages indicate unsystematic interruptions caused by faults or failures.
-Operator availability is the worker's ability to operate the machines or process the jobs.
-Finally, recycle variability in manufacturing systems is caused by quality problems in products.
-All these concepts depend on a nondynamic process.
-
-\begin{table}
-\centering
-\caption{Classes of variability}\label{tb:Classes of variability}
-\begin{tabular}{ccc}
-Variability Class & Coefficient of variation & Typical situation \\ \hline
-Low & $< 0.75$ & No outages \\
-Moderate & $0.75<$CV$<1.33$ & Short adjustments (e.g.\ setups) outages \\
-High & $\geq 1.33$ & Long outages (e.g.\ failures)
-\end{tabular}
-\source{Adapted from \citet*{Hopp2001}}
-\end{table}
-
-\subsubsection{Law (Variability)}
-\label{sec:orge54ca13}
-
-The impact of variability in manufacturing systems is straightforward, increasing variability always degrades the performance of a production system \citep[p.295]{Hopp2001}.
+The impact of variability in manufacturing systems is straightforward, increasing variability always degrades the performance of a production system \citep{Hopp2001}.
 Because of the damages that variability can cause in a production system, several strategies aim at protecting the system from variability.
 
 \subsubsection{Law (variability buffering)}
-\label{sec:org353349b}
+\label{sec:orga1830fb}
 
 The most common are the use of buffers as a bumper or cushion.
 The buffering method is the excess of at least one of the variables that can be consumed without harming the system's performance.
-Variability in a production system will be buffered by some combination of inventory, capacity and time \citep[p.295]{Hopp2001}.
+Variability in a production system will be buffered by some combination of inventory, capacity and time \citep{Hopp2001}.
 In circumstances where buffers are ineffective, variability may propagate through transformation process impacting the production flow.
 Thus, laws concerning the production flow, material flow, capacity, utilization, and variability propagation must be enunciated.
 
 \subsubsection{Law (conservation of material)}
-\label{sec:org23a532e}
+\label{sec:org526599b}
 
 The first law regarding the production flow is the conservation of material in and out of the transformation processes \citep{Hopp2001}.
 Law (Conservation of Material) states that in a stable system, over the long run, the rate out of a system will equal the rate in, less any yield loss, plus any parts production within the system.
@@ -474,7 +325,7 @@ The difference between the input rate and capacity creates a buffer that should 
 In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.303]{Hopp2001}.
 
 \subsubsection{Law (utilization)}
-\label{sec:orgb93ba0b}
+\label{sec:org5eae051}
 
 Law (Utilization) states that if a station increases utilization without making any other changes, average WIP and cycle time, CT, will increase in a highly nonlinear fashion \citep[p.303]{Hopp2001}.
 An increase in process utilization unaccompanied by adjustments means a larger actual output for a same maximum output.
@@ -482,7 +333,7 @@ In the production line, it is an increase in bottleneck utilization, once the \(
 Hence, according to Little's law for operation management (Equation\textasciitilde{}\ref{eq:Little's Law for operation management}) produces a nonlinear effect in WIP and CT.
 
 \subsubsection{Law (process batching)}
-\label{sec:org5a1bece}
+\label{sec:org745001e}
 
 Finally, the Law (Process Batching), accounts for finite production, i.e., in batch production where there are meaningful setup times.
 According to Hopp and Spearman \cite{Hopp2001}, in batch production:
@@ -512,7 +363,7 @@ To non-steady processes, a different approach must be used to.
 The approach also may produce explanations of stable systems to point out algebraic relations between all system that could be used to analyze and prescribe management actions undertaken to improve the processes.
 
 \subsection{The manufacturing theory does not apply directly to construction}
-\label{sec:orgf45248b}
+\label{sec:org23cb354}
 
 Manufacturing is either a continous or a repective process.
 Machinery and human resources are specialized and qualified.
@@ -524,9 +375,9 @@ Increasing production in construction often means add more human resources.
 That often cause decrease of productivity due to lack of space, tools, skills, etc.
 
 \section{Productivity Function [0/2]}
-\label{sec:orgfc748f7}
+\label{sec:org419a66f}
 \subsection{Production process system representation [100\%]}
-\label{sec:org14824ad}
+\label{sec:org6e7ee9f}
 
 \begin{itemize}
 \item[{$\square$}] A SYSTEM VIEW (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
@@ -559,7 +410,7 @@ Regardless of the system composition in terms of how many inputs and outputs or 
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{Figures/system_basic.png}
-\caption{\label{fig:orgfb45046}Simple system}
+\caption{\label{fig:orgd092d7a}Simple system}
 \end{figure}
 
 
@@ -609,7 +460,7 @@ This configuration is a Closed-loop Control System or feedback control system in
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/A_typical_feedback_loop_control.eps}
-\caption{\label{fig:org7a63aea}A typical feedback loop control}
+\caption{\label{fig:org9335956}A typical feedback loop control}
 \end{figure}
 
 
@@ -635,7 +486,7 @@ Operating on possibly the same conditions of linear/nonlinear, deterministic/sto
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/Construction_project_driven_production_system.eps}
-\caption{\label{fig:orgd488886}Construction project-driven production system}
+\caption{\label{fig:orgf400511}Construction project-driven production system}
 \end{figure}
 
 
@@ -658,7 +509,7 @@ Alternatively, variants of manufacturing laws must be developed to production in
 
 
 \subsection{Mathematical foundation of the Productivity Function}
-\label{sec:orgedeb29a}
+\label{sec:org9772162}
 
 (Explain differential equations, the frequency domain and transformation)
 
@@ -668,7 +519,7 @@ Furthermore, this paper shows the calculation of theoretical production paramete
 The contribution of this paper to the body of knowledge are algebraic equations based on a generic model to calculate production parameters for repetitive processes in construction.
 
 \subsubsection{Step response: Transient and steady state (explain the equation, move it, or clean it)}
-\label{sec:orgc41d1dd}
+\label{sec:org4d071e9}
 
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
@@ -695,7 +546,7 @@ The step function in the time domain is given by:
 \end{equation}
 
 \subsubsection{TODO Explain transient and steady-state (move to section above, foundation)}
-\label{sec:org9e1e1ef}
+\label{sec:orgb8145f0}
 \begin{itemize}
 \item[{$\square$}] Why the transient
 TRANSIENT STATE, STEADY-STATE, AND UNSTEADY-STATE RESPONSE
@@ -711,7 +562,7 @@ Consequently, the system outputs at unsteady-state vary with time during the on-
 
 \begin{enumerate}
 \item Mathematical foundation of production (repeated title)
-\label{sec:org23344bc}
+\label{sec:org90e6197}
 
 Repetitive construction projects falls into a fuzzy area where both project management and manufacturing overlap.
 Repetitive construction projects are constituted by several contractors executing processes that they are specialized in, as for instance plumbers and electricians, that in the end, build a one-of-a-kind product.
@@ -726,7 +577,7 @@ The steady-state of a system
 \end{itemize}
 
 \item Explain traditional methods of steady-state
-\label{sec:orgdc005da}
+\label{sec:orgf390bbf}
 The transient is the immediate system reaction of an input change from a rest state \citep{Ogata2010}.
 If the system is stable, the response will tend to a constant value, \(y_{\mbox{ssv}}\), when the time, \(t\), goes to infinity (Equation\textasciitilde{}\ref{eq:steady state}).
 When the output reaches this value, the response is then at steady state.
@@ -745,7 +596,7 @@ Finally, if the system is stable; the output will tend to the steady state value
 \begin{figure}[htbp]
 \centering
 \includegraphics[height=150]{./Figures/FIG02Transient_analysis.eps}
-\caption{\label{fig:orgdb77f14}Transient analysis for unit step input \label{fig:Transient}}
+\caption{\label{fig:orgbe7c3cb}Transient analysis for unit step input \label{fig:Transient}}
 \end{figure}
 
 
@@ -789,7 +640,7 @@ Where the highest power of \(s\) in the denominator of the transfer function is 
 
 
 \subsection{Modelling method [0/0]}
-\label{sec:org9bbcded}
+\label{sec:orgd141fd5}
 
 \begin{itemize}
 \item[{$\square$}] SYSTEM IDENTIFICATION (Source: Identification of repetitive processes at steady- and unsteady-state: Transfer function)
@@ -821,9 +672,9 @@ The resulting models vary in complexity depending on the flexibility needed to a
 The transfer function is used to show the system dynamics explicitly.
 
 \subsection{Production Theory for Construction}
-\label{sec:orga637304}
+\label{sec:org02a410c}
 \subsubsection{Production forecast}
-\label{sec:orge45565b}
+\label{sec:org87bc02a}
 
 Forecasting is a tool that allows managers to create and access different scenarios of production result of risk impact.
 Hence, forecasting supports both risk management practices for mitigating risk as the result of current progress on future completion.
@@ -845,7 +696,7 @@ Following the framework, an analytical technique to describe the dynamic conditi
 This study is a step forward towards the development of a mathematically driven production theory for construction project management and project-driven systems defining a modeling approach and pointing out that dynamical systems theory would be useful to describe the behavior of production in construction.
 
 \subsubsection{Variability analysis}
-\label{sec:orgf7919aa}
+\label{sec:org88f22f8}
 ``Law (Variability): Increasing variability always degrades the performance of a production system \citep{Hopp2001}.''
 In other words, the system will achieve its maximum performance when there is no variability.
 That becomes evident when analyzing CV (Equation\textasciitilde{}\ref{eq:CV}): the greater the coefficient of variation, CV$\backslash$@; lower is the mean output, \(\bar{y}\), i.e., \(\bar{y} \sim \mbox{CV}^{-1}\).
@@ -873,12 +724,12 @@ Replacing the left side of the Equation\textasciitilde{}\ref{eq:FinalValue2} by 
 \end{equation}
 
 \subsubsection{Production benchmark}
-\label{sec:org676849b}
+\label{sec:org55daf4b}
 \subsubsection{Production plan, monitoring, and control}
-\label{sec:org6f197d6}
+\label{sec:org19f8472}
 \begin{enumerate}
 \item Throughput
-\label{sec:org8bad09d}
+\label{sec:org08e10d1}
 Throughput is the output (non-defective) of a production process in a defined period \cite{Hopp2001}.
 Construction scheduling accuracy strongly depends on being able to coordinate resources to determine the processes throughput \cite{Cho2011}.
 When the relationship between resources and throughput can be established;
@@ -894,7 +745,7 @@ Explicitly incorporating all factors that influence productivity in a model is a
 Simplifications and assumptions have to be made; however, the models are often over simplified.
 
 \item Cycle-time
-\label{sec:orgf1d79a6}
+\label{sec:orgafcaef5}
 
 The accumulated throughput over time results in units of a service or product produced over time.
 The time taken to produce one output is the cycle time.
@@ -940,14 +791,14 @@ y_{\mbox{ssv}} \times (t_j-t_{j-1}) = 1, \quad\mbox{ or }\quad \Delta t_j = 1/y_
 
 \begin{enumerate}
 \item Average cycle-time
-\label{sec:org373b341}
+\label{sec:orgcc26b87}
 \item Worst cycle-time
-\label{sec:orgf6b8330}
+\label{sec:org1eb6827}
 \item Best cycle-time
-\label{sec:orgac212d6}
+\label{sec:org7227bb1}
 \end{enumerate}
 \item Capacity
-\label{sec:orgfad7c86}
+\label{sec:orgf2efb24}
 ``Law (Capacity): In steady state, all plants will release work at an average rate that is strictly less than the average capacity \citep[p.]{Hopp2001}.''
 Furthermore, in most cases, releasing work into the system above the capacity causes the system to become unstable \citep{Hopp2001}.
 According to these definitions, it would be correct to state that a process' capability is the highest throughput achievable without the process becoming unstable.
@@ -970,24 +821,24 @@ Regardless of the equation used for productivity measurement \citep{Thomas1990},
 
 
 \section{Applicability}
-\label{sec:org5bc83b8}
+\label{sec:org45bef75}
 \subsection{Automation and technology}
-\label{sec:org904faf6}
+\label{sec:org05b44e0}
 \subsubsection{Supervisory control and data acquisition (SCADA)}
-\label{sec:org3cba395}
+\label{sec:orgafe0d22}
 \subsubsection{Challenges}
-\label{sec:org35c201e}
+\label{sec:org44cac91}
 \subsection{Decision-making support}
-\label{sec:orge22fac0}
+\label{sec:orgdf71916}
 \subsection{Benefits and impacts}
-\label{sec:org122fa73}
+\label{sec:org5f94504}
 \section{Discussion}
-\label{sec:org21efcb5}
+\label{sec:orge6aafa8}
 \section{Conclusion}
-\label{sec:orgeaf7a49}
+\label{sec:org10da2f4}
 
 \section{Plan}
-\label{sec:org090881b}
+\label{sec:org0510e99}
 \begin{center}
 \begin{tabular}{lrlrr}
 Section & Words & Current & Effort & Current\\
@@ -1005,10 +856,10 @@ Total & 7000 & 0 & 35 & 3\\
 \end{tabular}
 \end{center}
 \subsection{6 Section}
-\label{sec:orge7e153c}
+\label{sec:orga39f3a7}
 
 \section{References}
-\label{sec:orga22e965}
+\label{sec:org380119f}
 
 \printbibliography[title=none]
 \end{document}
