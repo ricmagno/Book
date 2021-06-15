@@ -1,4 +1,4 @@
-1;95;0c:PROPERTIES:
+:PROPERTIES:
 :ID:       170029D7-DE41-4BDB-B78E-54BCEA47E375
 :END:
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
@@ -73,8 +73,8 @@ Finally, the chapter presents automated methods of data collection that feed the
     You are welcome to deep your knownledge and see the equations and their development on the referenced literature.
     Next, you will find several concepts of production in manufacturing and later their applicability to construction management.
     
-* NEXT Lean principles and production theory [0/2]
-** Production in manufacturing (Factory Physics)
+* NEXT Lean principles and production theory [0/1]
+** NEXT Production in manufacturing (Factory Physics)
      The manufacturing industry is knowable of its production.
      From early times when 'time and motion' has been developed on workers construction a brick wall (Reference here), manufacturing has being advancing on undestanding and manageming of its production.
      Mostly important on the context on this book, it was the creation and development of lean production that inspired lean construction.
@@ -110,7 +110,7 @@ Finally, the chapter presents automated methods of data collection that feed the
  Work-in-process, WIP, consists of the intermediate inventories between transformation processes.
  WIP excludes the inventories at the extremes of the production chain, i.e., the first raw material inventory and the finished goods inventory citep:Hopp2001.
 
-*** Cycle time label:cycle_time
+*** INBOX Cycle time label:cycle_time
 
  The cycle time, CT, is the time spent to produce a good, i.e., complete a production cycle.
  Cycle time measures the time a product or a service takes to be completed citep:Hopp2001.
@@ -125,7 +125,7 @@ Finally, the chapter presents automated methods of data collection that feed the
  Consequently, the time necessary for releasing the next product is equivalent to the processing time to finish the next product.
  In this case, $\mbox{CT}_2$ is equal the CT of the last transformation process.
 
-*** Lead time label:lead_time
+*** INBOX Lead time label:lead_time
 
  Lead time, LT, is the time assigned for production between the start and end of the transformation process chain \citep{Hopp2001}.
  The start and end of lead time are at the same points those in of cycle time.
@@ -133,22 +133,22 @@ Finally, the chapter presents automated methods of data collection that feed the
  Lead time is a management constant.
  During normal operations, the cycle time is less or equal than the lead time.
 
-*** Utilization label:utilization
+*** REVIEW Utilization label:utilization
 
- Utilization is the ratio of the actual output to the full potential output of a transformation process expressed as a percentage.
- The actual output and the full potential may be expressed in currency units, unit amount of production or time, whichever provides better management information citep:Kumar2009.
- The difference between actual and potential output (measured by the utilization ratio) can be used to display potential problems in the process, such as machine failure, job waiting, or lack of parts.
- As mentioned above, a few processes operate at capacity due to stability issues.
- As a result, utilization is also rarely close to 100%.
- If utilization is high, the process is operating under capacity.
- Conversely, low utilizations indicate an excess of capacity citep:Hopp2001.
+Utilization is the ratio of the actual output to the full potential output of a transformation process expressed as a percentage.
+The actual output and the full potential may be expressed in currency units, unit amount of production or time, whichever provides better management information citep:Kumar2009.
+The difference between actual and potential output (measured by the utilization ratio) can be used to display potential problems in the process, such as machine failure, job waiting, or lack of parts.
+As mentioned above, a few processes operate at capacity due to stability issues.
+As a result, utilization is also rarely close to 100%.
+If utilization is high, the process is operating under capacity.
+Conversely, low utilizations indicate an excess of capacity citep:Hopp2001.
 
-*** Law (Little's Law) label:littles_law
+*** WORKING Law (Little's Law) label:littles_law
 
- Named after John D. C. Little citep:Little1961, the Little's law relates three of main lower level variables management in a queuing system.
- A queuing system consists of a flow of discrete items arriving at a constant pace, to a stable system that services and releases these items for further processing.
- The system follows a First-In, First-Out (FIFO) sequencing.
- Figure~\ref{fig:Schematic view of a flow of items through a queuing system} shows a schematic view of a flow of items through a queuing system.
+Named after John D. C. Little citep:Little1961, the Little's law relates three of main lower level variables management in a queuing system.
+A queuing system consists of a flow of discrete items arriving at a constant pace, to a stable system that services and releases these items for further processing.
+The system follows a First-In, First-Out (FIFO) sequencing.
+Figure~\ref{fig:Schematic view of a flow of items through a queuing system} shows a schematic view of a flow of items through a queuing system.
 
  \begin{figure}[H]
    \centering
@@ -157,7 +157,7 @@ Finally, the chapter presents automated methods of data collection that feed the
    \source{Adapted from citep:Little2008}
  \end{figure}
 
- Little's Law states that, under steady state conditions, the average number of items in a queuing system equals the average rate at which items arrive multiplied by the average time that an item spends in the system citep:Little2008.
+Little's Law states that, under steady state conditions, the average number of items in a queuing system (work-in-progress ref:work-in-progress) equals the average rate at which items arrive multiplied by the average time that an item spends in the system citep:Little2008.
 
  # The Little's law is originally expressed as $L=\lambda W$, where:
 
@@ -167,10 +167,11 @@ Finally, the chapter presents automated methods of data collection that feed the
  #     \item $\lambda^{-1}$ is the expected time between two consecutive arrivals to the system.
  # \end{itemize}
 
- Furthermore, there is not a unique solution for the formula because there are no constants involved.
- It is possible to obtain a value of $L$ with infinite combinations of $\lambda$ and $W$.
- Another important remark about Little's law is the assumption of a stationary arrival process.
- A more precise realization of a particular queuing system is possible for Little's Law by interpreting the number of items arriving and departing in the system, as shown in Figure~\ref{fig:Number of items in a queuing system versus time}, where:
+Furthermore, there is not a unique solution for the formula because there are no constants involved.
+It is possible to obtain a value of $L$ with infinite combinations of $\lambda$ and $W$.
+Another important remark about Little's law is the assumption of a stationary arrival process.
+
+# A more precise realization of a particular queuing system is possible for Little's Law by interpreting the number of items arriving and departing in the system, as shown in Figure~\ref{fig:Number of items in a queuing system versus time}, where:
 
  # \begin{itemize}
  #     \item $n_a(t)$ is the number of items arriving in the queuing system at time $t$;
@@ -188,8 +189,8 @@ Finally, the chapter presents automated methods of data collection that feed the
  #     L(T) = \lambda (T) \times W(T)
  # \end{equation}
 
- To obtain $L=\lambda \times W(T)$, the system must be at steady state, i.e., $T \rightarrow \infty$.
- Therefore:
+To obtain $L=\lambda \times W(T)$, the system must be at steady state, i.e., $T \rightarrow \infty$.
+Therefore:
 
  # \begin{equation}
  #     \lim_{T\rightarrow\infty} L(T) = \lim_{T\rightarrow\infty} \lambda(T) \times W(T) \\
@@ -206,27 +207,28 @@ Finally, the chapter presents automated methods of data collection that feed the
    \source{Adapted from citep:Little1961}
  \end{figure}
 
- Over the years, the original Little's law equation citep:Little1961 evolved to a more generic form comprising operations management citep:Hopp2001.
- Work-in-process, WIP, is equivalent to the expected number of units in the system, $L$.
- The average output of a production process per unit time, THs, is the arrival rate during period, $\lambda$, and the cycle time, CT, is the average waiting time in the system per arrival during $T$, $W$.
- Thus, Little's Law can also be written as:
+Over the years, the original Little's law equation citep:Little1961 evolved to a more generic form comprising operations management citep:Hopp2001.
+Work-in-process, WIP, is equivalent to the expected number of units in the system, $L$.
+The average output of a production process per unit time, THs, is the arrival rate during period, $\lambda$, and the cycle time, CT, is the average waiting time in the system per arrival during $T$, $W$.
+Thus, Little's Law can also be written as:
 
  \begin{equation}
    \mbox{WIP} = \mbox{CT} \times \mbox{TH}
     \label{eq:Little's Law for operation management}
  \end{equation}
 
-The difference between Equation~\ref{eq:Little's Law} and Equation~\ref{eq:Little's Law for operation management} is crucial in this research because project-driven production is seldom at steady state.
+The difference between the original Little's Law and the current version is crucial in this chapter.
+Because project-driven production is seldom at steady state.
 Consequently, the Equation~\ref{eq:Little's Law for operation management}, which is based on an average behavior of variables over a very long period, is likely to produce an imprecise approximation.
 However, to describe most relations of production in manufacturing the approximation described in Equation~\ref{eq:Little's Law for operation management} is sufficiently accurate.
 
 
-*** Bottleneck rate
+*** WORKING Bottleneck rate
  In a production line, the bottleneck rate, $r_b$, of this line is given by the throughput of the process with highest long-term utilization, i.e., lowest effective rate citep:Hopp2001.
  In general terms, the bottleneck rate points out the process that is working closest to its capacity.
  Accordingly, the bottleneck process restricts the throughput of the production line.
 
-*** Critical WIP
+*** NEXT Critical WIP
 
  The critical WIP, $W_0$, of a production line, is the value related to the maximum production capability citep:Hopp2001.
  At $W_0$ the production line reaches its maximum throughput, $\mbox{THs}_{\mbox{max}}$, restricted by $r_b$, producing goods with minimum intervals, i.e., cycle time $\mbox{CT}_0$ citep:Martin1998.
@@ -392,12 +394,12 @@ label:tb:classes_of_variability
 | Moderate          | Short adjustments outages | Set ups                 |
 | High              | Long outages              | Failures and breakdowns |                    
  
-*** Law (variability)
+*** REVIEW Law (variability)
 
  The impact of variability in manufacturing systems is straightforward, increasing variability always degrades the performance of a production system citep:Hopp2001.
  Because of the damages that variability can cause in a production system, several strategies aim at protecting the system from variability.
 
-*** Law (variability buffering)
+*** REVIEW Law (variability buffering)
 
  The most common are the use of buffers as a bumper or cushion.
  The buffering method is the excess of at least one of the variables that can be consumed without harming the system's performance.
@@ -456,15 +458,22 @@ label:tb:classes_of_variability
  The approach also may produce explanations of stable systems to point out algebraic relations between all system that could be used to analyze and prescribe management actions undertaken to improve the processes.
 
 ** The manufacturing theory does not apply directly to construction
+   :LOGBOOK:
+   CLOCK: [2021-06-16 Wed 06:50]--[2021-06-16 Wed 06:59] =>  0:09
+   :END:
 
-       Manufacturing is either a continous or a repective process.
-       Machinery and human resources are specialized and qualified.
-       Production flow and material routes are established. 
-       Thus, most manufacturing processess can be automated.
-       That scenario is different from construction.
-       While capacity is knwon and measured in manufacturing, there was no way to measured it in construction.
-       Increasing production in construction often means add more human resources.
-       That often cause decrease of productivity due to lack of space, tools, skills, etc.
+Manufacturing is either a continous or a repective process.
+In which, machinery and human resources are specialized and qualified.
+Production flow and material routes are established. 
+Thus, most manufacturing processess can be automated.
+While capacity is knwon and measured in manufacturing, there was no way to measured it in construction.
+That scenario is different from construction.
+Increasing production in construction often means add more human resources.
+That often cause decrease of productivity due to lack of space, tools, skills, etc.
+These conditions puts production in construction on an unsteady state.
+Thus, while the concepts of manufacturing production still apply to contruction production, the equations do not.
+That is because, production in constructinon is not stable for long enough for these equations to provife accurate outcomes.
+As such, a mathematical theory should be developed to describe production in constrution in and out of steady state.
 
 * WORKING Productivity Function [0/2]
 ** WORKING Production process system representation [100%]
