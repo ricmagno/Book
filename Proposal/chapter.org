@@ -882,11 +882,82 @@ Regardless of the equation used for productivity measurement \citep{Thomas1990},
 
 
 * INBOX Applicability
-** INBOX Automation and technology
-*** INBOX Supervisory control and data acquisition (SCADA)
+** WORKING Production Theory
+The traditional theory about fundamental mechanisms of production in repetitive processes in construction is at an embryonic stage and does not yet fully establish the foundations of a production model.
+The traditional and convenient approach to project-driven production in construction is to rely on linear steady state models.
+By considering the transient state, Productivity Function produces models that are more accurate in describing the processes dynamics than the steady state approaches (Antunes et al. 2017).
+The Productivity Function provides a mathematical foundation to develop algebraic for the calculations of cycle times (average, best- and worst-cases), throughput at capacity (Antunes et al. 2018), and the influence of the transient state time in the production variability (Antunes et al. 2016).
+
+Productivity Function has been applied in feedback loop control yielding a controlling approach [Productivity Function Predictive Control (PFPC)] that can achieve high performances even when processes operate closer to capacity (Antunes 2017).
+Moreover, this performance enhancement is higher when PFPC is applied to processes in a parade-of-trades (Tommelein 1998).
+The PFPC shown to be a robust approach to plan, control, and optimize production and supply chain in construction with direct implications to management practices such as takt time.
+A benefit of PFPC is its focus on minimizing the variances of output to the set point or plan.
+The PFMPC can operate satisfactorily even without an accurate model (Antunes 2017).
+In practice, the use of adaptive PFPC (APFPC) can be useful.
+This adaptive version estimates a Productivity Function cyclically within a period; thus, the control relies on a model that is accurate to the current time frame.
+Therefore, if the production system evolves (which is the goal of continuous improvement) that makes the model obsolete, APFPC can relearn the process and estimate a new model automatically.
+
+Although the Productivity Function can describe a variety of systems (including
+multi-variables systems), a structure that can embrace nonlinear and/or time-variant systems is required; and respectively, the introduction of linear time-varying space-state models which can also describe nonlinear systems.
+Nevertheless, the evaluation of these function from the data is based on the back-propagation algorithm (Antunes 2017), which is a machine learning tool.
+
+** WORKING Framework
+
+The top-down and bottom-up approaches interact joining theory and practice in continuous improvement loop.
+This suggestion stands on two tenets: observer effect and Genchi Genbutsu.
+In physics, the term observer effect (Bianchi 2013) defines the influence of the observation act to the event.
+It means that by observing an event, the observer may alter the event, and consequently modify the observation.
+This effect is also known in the human sciences, where subjects have their behavior affected by being observed.
+In this sense, the awareness of being observed may modify the production system and its model.
+Thus, production is constantly observed, and the information is used to modify production.
+Genchi Genbutsu, a principle of the Toyota Production System, which means ‘go to the source and get the facts to make the right decision.’
+
+In this approach, instead of asking for information updates the progress status is obtained in real time from positioned sensors or upon inspection from the drones.
+Next, the machine learning engine will merge the information (LiDAR, images, sensors) with BIM to identify the product progress and deviations from the specifications (similarly as in the SCADA).
+In parallel, the production information (progress and workers information) is checked against the production theory and models to evaluate productivity, forecast conclusion dates and assess corrective actions (as in APFPC).
+These two combined and jointly with the project plan are then presented to the ‘control room.’
+Therefore, the ‘control room’ can rely on accurate information in the decision-making process, which results in a data-driven continuous improvement loop (Figure 1).
+
+For instance, if a fixed camera detects that a disposal bin is being filled at a certain rate the replacement of that bin can be ordered from the control room without the worker’s requisition (that means eliminating the requisition task (Muda Level I), the work stoppage (Muda Level II) by waiting that the bin replacement or having to replace it (setup/cleaning, i.e., Muda Level I).
+And as Muda decreases Mura also decreases (Antunes et al. 2016).
+Similar reasoning works with suppliers.
+For example, if the casing were not cemented in place, the suppliers can be notified to avoid bringing more to the site.
+This integration with the supplier may avoid Muda (Level I) in one or more situations: inventory - use extra space to store more that its needed; waiting - if the trucks need to wait around the site; motion - case the truck needs to go back.
+Because information is compiled in the SCADA and centralized in the ‘control room’ it can be accessed and shared with ease, such as in a library.
+
+** WORKING Automation and technology
+*** WORKING Supervisory control and data acquisition (SCADA)
 *** INBOX Challenges
 ** INBOX Decision-making support
 ** INBOX Benefits and impacts
+
+Cross-functional cooperation in construction is low mostly because the parts have no information about what is happening outside their area.
+The same can be said about suppliers. The establishment of the ‘control room’ centralizes information from the plan, labor, process, and production.
+Moreover, once the control-room has information about the progress of the current and next activities on-site, it will be able to coordinate cross-functional activities and supply chain.
+Building information security and maintenance may use the product legacy
+information gathered in construction eliminating redundant work by analyzing the building.
+This work has already been done during construction (reducing over-processing).
+There is a compiled log of who did what, when and how for every part of the building including divergences between the original design and every change and defect occurred during construction. There can be extensive details of how the process has been done (and evolved).
+The production knowledge has further benefits.
+Especially, due to the network effect.
+The network effect adds value to this framework with use and adoption.
+This means that data can be generalized to a broader audience with more information such as season of the year, weather condition, geo-localization, altitude, winds, local culture, diversity, or any other feature.
+Hence, future endeavors will establish the production base-line using historical evidence rather than the usual labor/time relationship.
+Using the chrono-analysis continuous assessment jointly with the data (production progress and workers effort) from previous projects informal processes tends to be eliminated.
+Better processes are developed and standardized.
+More accurate historical information is persistent and can be generalized to different projects enabling comparison and continuous improvement methodologies from project to project.
+New builders will be trained in the benchmark process instead of the “I have been done this for the last x years” (and repeating the same mistakes over and over) approach.
+As such, the conservative company culture, lack of innovation and delayed adoption will be addressed by the marked.
+Companies will quantitatively assess and qualify the performance of contractors in previous projects.
+In an intensive third-party contracting industry such as construction, low productivity companies that often make mistakes are costly, and consequently, put at the end of the supplier's list or dismissed.
+Construction needs an increase in the number of builders, but it really needs builders with better performance.
+A more automated construction industry should experience a set of benefits, such as
+better decision-making processes, increase information flow, and increase productivity.
+These benefits have a collateral impact on the whole society.
+More productivity means that more projects can be done using fewer resources.
+Accordingly, more infrastructure can be built and maintained.
+It can increase the affordability of the housing prices.
+
 * INBOX Discussion
 * INBOX Conclusion
 
